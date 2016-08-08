@@ -131,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
     public Menu getNavMenu() {
         return navMenu;
     }
+
     public void setNavItemSelected(boolean wasSelected) {
         navItemSelected = wasSelected;
     }

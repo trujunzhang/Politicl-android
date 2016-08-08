@@ -8,7 +8,9 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.view.menu.MenuBuilder;
 import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -58,7 +60,7 @@ public class NavDrawerHelper {
 
             @Override
             public void successForMenu(@NonNull List<MenuCategoryItem> cards) {
-
+                NavDrawerHelper.this.setupDynamicNavDrawerItems(cards);
             }
 
             @Override
@@ -73,9 +75,15 @@ public class NavDrawerHelper {
         return funnel;
     }
 
-    public void setupDynamicNavDrawerItems() {
+    public void setupDynamicNavDrawerItems(List<MenuCategoryItem> cards) {
         accountToggle = false;
         updateMenuGroupToggle();
+
+        MenuBuilder _NavMenu = (MenuBuilder) activity.getNavMenu();
+        _NavMenu.add(123, 101, 0, "djzhang");
+
+        SubMenu _submenu = _NavMenu.addSubMenu("Categories");
+        _submenu.add(124, 102, 0, "wangaho");
 
         if (!ReleaseUtil.isDevRelease()) {
 //            activity.getNavMenu().findItem(R.id.nav_item_feed).setVisible(false);
