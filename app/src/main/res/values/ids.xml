@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="view_tool_tip_container" type="id" />
+
+    <array name="page_localized_string_ids"></array>
+</resources>

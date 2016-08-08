@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="feed_text_primary_light">#222</color>
+    <color name="feed_text_primary_dark">#ddd</color>
+    <color name="feed_text_secondary_light">#555</color>
+    <color name="feed_text_secondary_dark">#ccc</color>
+    <color name="feed_text_tertiary_light">#71777d</color>
+    <color name="feed_text_tertiary_dark">#aaa</color>
+    <color name="feed_image_border">#1f000000</color>
+    <color name="reading_list_add_background">#4888</color>
+    <color name="reading_list_delete_link">#f00</color>
+
+    <color name="holo_red_dark">#c00</color>
+
+    <color name="feed_window_background_light">#eaecf0</color>
+    <color name="feed_window_background_dark">#222</color>
+    <color name="feed_featured_icon_background">#ffb50d</color>
+
+    <color name="blue_liberal">#36b</color>
+
+    <color name="window_background">#303030</color>
+    <color name="actionbar_background">@color/window_background</color>
+    <color name="actionbar_highlight">#808080</color>
+    <color name="main_toolbar_background">@color/actionbar_background</color>
+    <color name="status_bar_background">@color/primary_dark_material_dark</color>
+    <color name="grey_700">#616161</color>
+
+    <color name="tool_tip_default_light">@android:color/black</color>
+    <color name="tool_tip_default_color">@color/tool_tip_default_light</color>
+</resources>

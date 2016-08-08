@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="feed_window_background_color">@color/feed_window_background_light</item>
+        <item name="feed_text_primary_color">@color/feed_text_primary_light</item>
+        <item name="feed_text_secondary_color">@color/feed_text_secondary_light</item>
+        <item name="feed_text_tertiary_color">@color/feed_text_tertiary_light</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RtlAwareTextView" parent="@android:style/Widget.TextView" tools:targetApi="17">
+        <item name="android:textDirection">anyRtl</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="SimpleDraweeViewPlaceholder">
+        <item name="actualImageScaleType">centerCrop</item>
+        <!--<item name="placeholderImage">@drawable/checkerboard</item>-->
+        <item name="placeholderImageScaleType">centerCrop</item>
+        <!--<item name="failureImage">@drawable/checkerboard</item>-->
+        <item name="failureImageScaleType">centerCrop</item>
+
+        <!-- Draw translucent images on a white background. -->
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@drawable/background_splash</item>
+    </style>
+
+</resources>

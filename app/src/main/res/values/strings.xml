@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Politicl-android</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Feed-->
+    <string name="share_via">Share via</string>
+    <string name="view_featured_article_footer_save_button_label">Save</string>
+
+    <string name="view_card_footer_button">See more</string>
+    <string name="feed">Explore</string>
+    <string name="fragment_feed_title">@string/feed</string>
+
+    <string name="error_server_response">The server could not complete the request.</string>
+    <string name="error_response_malformed">Response from the server was not formatted correctly.</string>
+    <string name="error_unknown">An unknown error occurred.</string>
+    <string name="format_error_server_message">Message: \"%s\"</string>
+    <string name="format_error_server_code">Code: \"%s\"</string>
+
+    <string name="error_network_error">Cannot connect to the Internet.</string>
+</resources>

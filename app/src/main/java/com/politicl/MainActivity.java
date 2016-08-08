@@ -1,0 +1,392 @@
+package com.politicl;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+import com.politicl.feed.FeedFragment;
+import com.politicl.tooltip.ToolTipUtil;
+
+import org.apache.commons.lang3.ArrayUtils;
+
+
+import android.annotation.TargetApi;
+import android.app.SearchManager;
+import android.appwidget.AppWidgetManager;
+import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.location.Location;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.speech.RecognizerIntent;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.annotation.VisibleForTesting;
+import android.support.design.widget.BottomSheetDialog;
+import android.support.design.widget.BottomSheetDialogFragment;
+import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.view.ActionMode;
+import android.support.v7.widget.Toolbar;
+import android.text.Html;
+import android.text.TextUtils;
+import android.text.format.DateUtils;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+
+import static com.politicl.util.DeviceUtil.isBackKeyUp;
+
+public class MainActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
+
+    private View fragmentContainerView;
+    private ActionBarDrawerToggle mDrawerToggle;
+    private View toolbarContainer;
+    private MainActivityToolbarCoordinator toolbarCoordinator;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((FeedFragment) getTopFragment()).scrollToTop();
+            }
+        });
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerToggle = new ActionBarDrawerToggle(
+                this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.setDrawerListener(mDrawerToggle);
+        mDrawerToggle.syncState();
+
+        toolbarContainer = findViewById(R.id.main_toolbar_container);
+        toolbarCoordinator = new MainActivityToolbarCoordinator(this, toolbarContainer, (Toolbar) findViewById(R.id.toolbar));
+
+        getSupportFragmentManager()
+                .addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+                    @Override
+                    public void onBackStackChanged() {
+                        updateToolbarForFragment();
+                    }
+                });
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        fragmentContainerView = findViewById(R.id.content_fragment_container);
+
+        if (savedInstanceState == null) {
+            // if there's no savedInstanceState, and we're not coming back from a Theme change,
+            // then we must have been launched with an Intent, so... handle it!
+            handleIntent(getIntent());
+        }
+    }
+
+    private void updateToolbarForFragment() {
+        if (getTopFragment() instanceof MainActivityToolbarProvider) {
+            toolbarCoordinator.setOverrideToolbar(((MainActivityToolbarProvider) getTopFragment()).getToolbar());
+        } else {
+            toolbarCoordinator.removeOverrideToolbar();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            this.finish();
+        }
+    }
+
+    public void closeNavDrawer() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Pass the event to ActionBarDrawerToggle, if it returns
+        // true, then it has handled the app icon touch event
+        if (mDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
+        int id = item.getItemId();
+
+        if (id == R.id.nav_camera) {
+            // Handle the camera action
+        } else if (id == R.id.nav_gallery) {
+
+        } else if (id == R.id.nav_slideshow) {
+
+        } else if (id == R.id.nav_manage) {
+
+        } else if (id == R.id.nav_share) {
+
+        } else if (id == R.id.nav_send) {
+
+        }
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    /**
+     * Get the Fragment that is currently at the top of the Activity's backstack.
+     * This activity's fragment container will hold multiple fragments stacked onto
+     * each other using FragmentManager, and this function will return the current
+     * topmost Fragment. It's up to the caller to cast the result to a more specific
+     * fragment class, and perform actions on it.
+     *
+     * @return Fragment at the top of the backstack.
+     */
+    public Fragment getTopFragment() {
+        return getSupportFragmentManager().findFragmentById(R.id.content_fragment_container);
+    }
+
+    public void showFeed() {
+        if (getTopFragment() instanceof FeedFragment) {
+            ((FeedFragment) getTopFragment()).scrollToTop();
+        } else {
+            popTopFragmentsExcept(FeedFragment.class);
+            pushFragment(FeedFragment.newInstance());
+        }
+    }
+
+
+    private void popTopFragmentsExcept(Class<?>... frags) {
+        while (getSupportFragmentManager().getBackStackEntryCount() > 0
+                && !ArrayUtils.contains(frags, getTopFragment().getClass())) {
+            getSupportFragmentManager().popBackStackImmediate();
+        }
+    }
+
+
+    /**
+     * Add a new fragment to the top of the activity's backstack.
+     *
+     * @param f New fragment to place on top.
+     */
+    public void pushFragment(Fragment f) {
+        pushFragment(f, false);
+    }
+
+
+    private void beforeFragmentChanged() {
+        closeNavDrawer();
+    }
+
+    /**
+     * Add a new fragment to the top of the activity's backstack, and optionally  allow state loss.
+     * Useful for cases where we might push a fragment from an AsyncTask result.
+     *
+     * @param f              New fragment to place on top.
+     * @param allowStateLoss Whether to allow state loss.
+     */
+    public void pushFragment(Fragment f, boolean allowStateLoss) {
+        beforeFragmentChanged();
+        // if the new fragment is the same class as the current topmost fragment,
+        // then just keep the previous fragment there.
+        // e.g. if the user selected History, and there's already a History fragment on top,
+        // then there's no need to load a new History fragment.
+        if (getTopFragment() != null && (getTopFragment().getClass() == f.getClass())) {
+            return;
+        }
+
+//        popTopFragmentsExcept(FeedFragment.class, PageFragment.class);
+        if (getTopFragment() == null || (getTopFragment().getClass() != f.getClass())) {
+            FragmentTransaction trans = getSupportFragmentManager().beginTransaction();
+            trans.setCustomAnimations(R.anim.fade_in, R.anim.fade_out, R.anim.fade_in, R.anim.fade_out);
+            trans.add(R.id.content_fragment_container, f);
+            trans.addToBackStack(null);
+            if (allowStateLoss) {
+                trans.commitAllowingStateLoss();
+            } else {
+                trans.commit();
+            }
+        }
+        afterFragmentChanged();
+    }
+
+    private void afterFragmentChanged() {
+    }
+
+
+//    @NonNull
+//    public static Intent newIntent(@NonNull Context context,
+//                                   @NonNull HistoryEntry entry,
+//                                   @NonNull PageTitle title) {
+//        return new Intent(MainActivity.ACTION_PAGE_FOR_TITLE)
+//                .setClass(context, MainActivity.class)
+//                .putExtra(MainActivity.EXTRA_HISTORYENTRY, entry)
+//                .putExtra(MainActivity.EXTRA_PAGETITLE, title);
+//    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        handleIntent(intent);
+    }
+
+    private void handleIntent(Intent intent) {
+        showFeed();
+    }
+
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        // Sync the toggle state after onRestoreInstanceState has occurred.
+        mDrawerToggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    // Note: this method is invoked even when in CAB mode.
+    @Override
+    public boolean dispatchKeyEvent(@NonNull KeyEvent event) {
+        return isBackKeyUp(event) && ToolTipUtil.dismissToolTip(this)
+                || super.dispatchKeyEvent(event);
+    }
+
+
+    private class MainDrawerToggle extends ActionBarDrawerToggle {
+        private boolean oncePerSlideLock = false;
+
+        MainDrawerToggle(android.app.Activity activity,
+                         android.support.v4.widget.DrawerLayout drawerLayout,
+                         int openDrawerContentDescRes, int closeDrawerContentDescRes) {
+            super(activity, drawerLayout, openDrawerContentDescRes, closeDrawerContentDescRes);
+        }
+
+//        @Override
+//        public void onDrawerClosed(View view) {
+//            super.onDrawerClosed(view);
+//            // if we want to change the title upon closing:
+//            //getSupportActionBar().setTitle("");
+//            if (!wasNavItemSelected()) {
+//                navDrawerHelper.getFunnel().logCancel();
+//            }
+//            navDrawerHelper.clearTempExplicitHighlight();
+//            setNavItemSelected(false);
+//        }
+//
+//        @Override
+//        public void onDrawerOpened(View drawerView) {
+//            super.onDrawerOpened(drawerView);
+//            // if we want to change the title upon opening:
+//            //getSupportActionBar().setTitle("");
+//            // If we're in the search state, then get out of it.
+//            if (isSearching()) {
+//                searchFragment.closeSearch();
+//            }
+//            // also make sure we're not inside an action mode
+//            if (isCabOpen()) {
+//                finishActionMode();
+//            }
+//            updateNavDrawerSelection(getTopFragment());
+//            navDrawerHelper.getFunnel().logOpen();
+//        }
+//
+//        @Override
+//        public void onDrawerSlide(View drawerView, float slideOffset) {
+//            super.onDrawerSlide(drawerView, 0);
+//            if (!oncePerSlideLock) {
+//                // Hide the keyboard when the drawer is opened
+//                hideSoftKeyboard(MainActivity.this);
+//                //also make sure ToC is hidden
+//                if (getCurPageFragment() != null) {
+//                    getCurPageFragment().toggleToC(PageFragment.TOC_ACTION_HIDE);
+//                }
+//                //and make sure to update dynamic items and highlights
+//                navDrawerHelper.setupDynamicNavDrawerItems();
+//                oncePerSlideLock = true;
+//            }
+//            // and make sure the Toolbar is showing
+//            showToolbar();
+//        }
+
+        @Override
+        public void onDrawerStateChanged(int newState) {
+            super.onDrawerStateChanged(newState);
+            if (newState == DrawerLayout.STATE_IDLE) {
+                oncePerSlideLock = false;
+            }
+        }
+    }
+
+}
