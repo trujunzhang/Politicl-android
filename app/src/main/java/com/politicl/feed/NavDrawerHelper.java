@@ -84,10 +84,6 @@ public class NavDrawerHelper {
 
         SubMenu _submenu = _NavMenu.addSubMenu("Categories");
         _submenu.add(124, 102, 0, "wangaho");
-
-        if (!ReleaseUtil.isDevRelease()) {
-//            activity.getNavMenu().findItem(R.id.nav_item_feed).setVisible(false);
-        }
     }
 
     public NavigationView.OnNavigationItemSelectedListener getNewListener() {
