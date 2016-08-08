@@ -30,6 +30,8 @@ import java.util.List;
 
 public class NavDrawerHelper {
 
+    public static final int GROUP_MENU_CATEGORIES = 104;
+
     private final PoliticlApp app = PoliticlApp.getInstance();
     private final MainActivity activity;
     private NavMenuFunnel funnel;
@@ -80,10 +82,9 @@ public class NavDrawerHelper {
         updateMenuGroupToggle();
 
         MenuBuilder _NavMenu = (MenuBuilder) activity.getNavMenu();
-        _NavMenu.add(123, 101, 0, "djzhang");
-
         SubMenu _submenu = _NavMenu.addSubMenu("Categories");
-        _submenu.add(124, 102, 0, "wangaho");
+        for (MenuCategoryItem item : cards)
+            _submenu.add(GROUP_MENU_CATEGORIES, item.id(), 0, item.title());
     }
 
     public NavigationView.OnNavigationItemSelectedListener getNewListener() {

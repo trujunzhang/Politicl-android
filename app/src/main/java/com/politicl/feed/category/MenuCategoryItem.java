@@ -12,4 +12,12 @@ public class MenuCategoryItem {
 
     @SuppressWarnings("unused") @Nullable private int parent;
     @SuppressWarnings("unused") @Nullable private int post_count;
+
+
+    public int id(){
+        return id;
+    }
+    public String title(){
+        return title;
+    }
 }
