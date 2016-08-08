@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.politicl.feed.FeedFragment;
+import com.politicl.feed.NavDrawerHelper;
 import com.politicl.tooltip.ToolTipUtil;
 
 import org.apache.commons.lang3.ArrayUtils;
@@ -71,10 +72,12 @@ import android.widget.TextView;
 
 import static com.politicl.util.DeviceUtil.isBackKeyUp;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity {
 
     private View fragmentContainerView;
+    private boolean navItemSelected;
+    private Menu navMenu;
+    private NavDrawerHelper navDrawerHelper;
     private ActionBarDrawerToggle mDrawerToggle;
     private View toolbarContainer;
     private MainActivityToolbarCoordinator toolbarCoordinator;
@@ -111,8 +114,10 @@ public class MainActivity extends AppCompatActivity
                     }
                 });
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        NavigationView navDrawer = (NavigationView) findViewById(R.id.nav_view);
+        navMenu = navDrawer.getMenu();
+        navDrawerHelper = new NavDrawerHelper(this, navDrawer.getHeaderView(0));
+        navDrawer.setNavigationItemSelectedListener(navDrawerHelper.getNewListener());
 
         fragmentContainerView = findViewById(R.id.content_fragment_container);
 
@@ -122,6 +127,18 @@ public class MainActivity extends AppCompatActivity
             handleIntent(getIntent());
         }
     }
+
+    public Menu getNavMenu() {
+        return navMenu;
+    }
+    public void setNavItemSelected(boolean wasSelected) {
+        navItemSelected = wasSelected;
+    }
+
+    private boolean wasNavItemSelected() {
+        return navItemSelected;
+    }
+
 
     private void updateToolbarForFragment() {
         if (getTopFragment() instanceof MainActivityToolbarProvider) {
@@ -175,30 +192,6 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
 
     /**
      * Get the Fragment that is currently at the top of the Activity's backstack.
