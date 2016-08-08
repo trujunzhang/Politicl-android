@@ -46,11 +46,7 @@ public class CategoryClientTest extends ActivityInstrumentationTestCase2<MainAct
     }
 
     public void testFetcher() {
-
-        CategoryClient client = new CategoryClient();
-
-        Site site = PoliticlApp.getInstance().getSite();
-        client.request(mActivity.getApplicationContext(), site, -1, new FeedClient.Callback() {
+        new CategoryClient().request(mActivity.getApplicationContext(), PoliticlApp.getInstance().getSite(), -1, new FeedClient.Callback() {
             @Override
             public void success(@NonNull List<? extends Card> cards) {
                 completionLatch.countDown();

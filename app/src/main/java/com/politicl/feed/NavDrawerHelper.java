@@ -17,7 +17,13 @@ import com.politicl.MainActivity;
 import com.politicl.PoliticlApp;
 import com.politicl.R;
 import com.politicl.analytics.NavMenuFunnel;
+import com.politicl.feed.category.CategoryClient;
+import com.politicl.feed.category.MenuCategoryItem;
+import com.politicl.feed.dataclient.FeedClient;
+import com.politicl.feed.model.Card;
 import com.politicl.util.ReleaseUtil;
+
+import java.util.List;
 
 
 public class NavDrawerHelper {
@@ -42,7 +48,25 @@ public class NavDrawerHelper {
                 });
 //        accountNameView = (TextView) navDrawerHeader.findViewById(R.id.nav_account_text);
 //        accountNameArrow = (ImageView) navDrawerHeader.findViewById(R.id.nav_account_arrow);
-        updateMenuGroupToggle();
+//        updateMenuGroupToggle();
+
+        new CategoryClient().request(activity.getApplicationContext(), PoliticlApp.getInstance().getSite(), -1, new FeedClient.Callback() {
+            @Override
+            public void success(@NonNull List<? extends Card> cards) {
+
+            }
+
+            @Override
+            public void successForMenu(@NonNull List<MenuCategoryItem> cards) {
+
+            }
+
+            @Override
+            public void error(@NonNull Throwable caught) {
+
+            }
+        });
+
     }
 
     public NavMenuFunnel getFunnel() {
