@@ -83,8 +83,10 @@ public class NavDrawerHelper {
 
         MenuBuilder _NavMenu = (MenuBuilder) activity.getNavMenu();
         SubMenu _submenu = _NavMenu.addSubMenu("Categories");
-        for (MenuCategoryItem item : cards)
-            _submenu.add(GROUP_MENU_CATEGORIES, item.id(), 0, item.title());
+        for (MenuCategoryItem item : cards) {
+            MenuItem menuItem = _submenu.add(GROUP_MENU_CATEGORIES, item.id(), 0, item.title());
+            menuItem.setIcon(R.drawable.ic_restore_black_24dp);
+        }
     }
 
     public NavigationView.OnNavigationItemSelectedListener getNewListener() {
