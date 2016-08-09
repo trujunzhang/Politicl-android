@@ -76,6 +76,8 @@ import static com.politicl.util.DeviceUtil.isBackKeyUp;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String ALL_STORIES_TITLE = "Politicl";
+
     private View fragmentContainerView;
     private boolean navItemSelected;
     private Menu navMenu;
@@ -294,7 +296,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleIntent(Intent intent) {
-        showFeed(new RestQueryPara("Politicl"));
+        showFeed(new RestQueryPara(ALL_STORIES_TITLE));
 //        showFeed(new RestQueryPara(1, "Top Story"));
     }
 
