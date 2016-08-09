@@ -47,9 +47,8 @@ public class AggregatedFeedContentClientTest extends ActivityInstrumentationTest
 
         AggregatedFeedContentClient client = new AggregatedFeedContentClient();
 
-        Site site = PoliticlApp.getInstance().getSite();
         int currentAge = 1;
-        client.request(mActivity.getApplicationContext(), site, currentAge, new FeedClient.Callback() {
+        client.request(mActivity.getApplicationContext(), PoliticlApp.getInstance().getSite(), currentAge, new FeedClient.Callback() {
             @Override
             public void success(@NonNull List<? extends Card> cards) {
                 completionLatch.countDown();
