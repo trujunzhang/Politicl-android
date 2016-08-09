@@ -357,7 +357,7 @@ public class MainActivity extends AppCompatActivity {
 //            if (isCabOpen()) {
 //                finishActionMode();
 //            }
-//            updateNavDrawerSelection(getTopFragment());
+            updateNavDrawerSelection(getTopFragment());
             navDrawerHelper.getFunnel().logOpen();
         }
 
@@ -386,6 +386,10 @@ public class MainActivity extends AppCompatActivity {
                 oncePerSlideLock = false;
             }
         }
+    }
+
+    public void updateNavDrawerSelection(Fragment fragment) {
+        navDrawerHelper.updateItemSelection(fragment);
     }
 
 }
