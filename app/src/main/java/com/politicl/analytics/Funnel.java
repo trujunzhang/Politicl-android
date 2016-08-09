@@ -146,13 +146,13 @@ import java.util.UUID;
         }
         L.d(logString);
 
-        new EventLoggingEvent(
-                schemaName,
-                revision,
-                getDBNameForSite(site == null ? getApp().getSite() : site),
-                app.getUserAgent(),
-                preprocessData(eventData)
-        ).log();
+//        new EventLoggingEvent(
+//                schemaName,
+//                revision,
+//                getDBNameForSite(site == null ? getApp().getSite() : site),
+//                app.getUserAgent(),
+//                preprocessData(eventData)
+//        ).log();
     }
 
     /**
