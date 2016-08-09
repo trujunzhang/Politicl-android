@@ -21,11 +21,6 @@ public class AggregatedFeedContent {
 
     @SuppressWarnings("unused") @Nullable private List<PostCard> posts;
 
-    @Nullable
-    public CardPageItem tfa() {
-        return null;
-    }
-
     public void appendPostToCard(List<Card> cards, Site site){
         if (posts!= null){
             for(PostCard item : posts){
