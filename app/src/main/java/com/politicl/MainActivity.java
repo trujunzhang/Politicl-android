@@ -295,7 +295,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleIntent(Intent intent) {
-        showFeed(new RestQueryPara());
+        showFeed(new RestQueryPara(1, "Top Story"));
     }
 
 
@@ -319,8 +319,8 @@ public class MainActivity extends AppCompatActivity {
                 || super.dispatchKeyEvent(event);
     }
 
-    public void toggleFragment(int category_id) {
-        showFeed(new RestQueryPara(category_id));
+    public void toggleFragment(int category_id, String title) {
+        showFeed(new RestQueryPara(category_id, title));
     }
 
     private class MainDrawerToggle extends ActionBarDrawerToggle {

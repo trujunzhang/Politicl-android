@@ -9,15 +9,17 @@ public class RestQueryPara implements Parcelable {
     private int currentPageNumber;
     private int totalPages;
     private int category_id;
+    private String title;
 
-    public RestQueryPara() {
+    public RestQueryPara(String title) {
         currentPageNumber = 1;
         totalPages = 1;
         allArticles = true;
+        this.title = title;
     }
 
-    public RestQueryPara(int category_id) {
-        this();
+    public RestQueryPara(int category_id, String title) {
+        this(title);
         this.category_id = category_id;
         allArticles = false;
     }

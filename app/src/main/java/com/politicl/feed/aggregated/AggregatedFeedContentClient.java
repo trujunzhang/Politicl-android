@@ -40,7 +40,12 @@ public class AggregatedFeedContentClient implements FeedClient {
         String endpoint = String.format(Locale.ROOT, Prefs.getRestbaseUriFormat(), "http", site.authority());
         Retrofit retrofit = RetrofitFactory.newInstance(site, endpoint);
         AggregatedFeedContentClient.Service service = retrofit.create(Service.class);
-        call = service.getRecentPosts(para.getCurrentPageNumber());
+        call = null;
+        if (para.isAllArticles()) {
+            call = service.getRecentPosts(para.getCurrentPageNumber());
+        } else {
+            call = service.getPostsByCategoryId(para.getCurrentPageNumber(), para.getCategory_id());
+        }
         call.enqueue(new CallbackAdapter(cb, site, para));
     }
 
@@ -65,6 +70,17 @@ public class AggregatedFeedContentClient implements FeedClient {
         @NonNull
         @GET("get_recent_posts")
         Call<AggregatedFeedContent> getRecentPosts(@Query("page") int num);
+
+        /**
+         * Gets aggregated content for the feed for the date provided.
+         * <p>
+         * like: http://www.politicl.com/api/get_recent_posts/?page={num}
+         *
+         * @param num the index of the pagination
+         */
+        @NonNull
+        @GET("get_category_posts")
+        Call<AggregatedFeedContent> getPostsByCategoryId(@Query("page") int num, @Query("category_id") int category_id);
     }
 
     private static class CallbackAdapter implements retrofit2.Callback<AggregatedFeedContent> {
