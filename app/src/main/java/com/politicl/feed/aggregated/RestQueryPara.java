@@ -64,4 +64,12 @@ public class RestQueryPara implements Parcelable {
     public int describeContents() {
         return 0;
     }
+
+    public void reset() {
+        currentPageNumber = 1;
+    }
+
+    public void nextPagination() {
+        currentPageNumber += 1;
+    }
 }

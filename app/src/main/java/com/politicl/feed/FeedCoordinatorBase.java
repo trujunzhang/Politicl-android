@@ -30,7 +30,6 @@ public abstract class FeedCoordinatorBase {
     private FeedUpdateListener updateListener;
     @NonNull
     private final List<Card> cards = new ArrayList<>();
-    private int currentAge;
     private List<FeedClient> pendingClients = new ArrayList<>();
     private FeedClient.Callback exhaustionClientCallback = new ExhaustionClientCallback();
     private Card progressCard = new ProgressCard();
@@ -51,7 +50,7 @@ public abstract class FeedCoordinatorBase {
 
     public void reset() {
         site = null;
-        currentAge = 1;
+        para.reset();
         for (FeedClient client : pendingClients) {
             client.cancel();
         }
@@ -63,10 +62,10 @@ public abstract class FeedCoordinatorBase {
     public void more(@NonNull Site site) {
         this.site = site;
         if (cards.size() > 1) {
-            currentAge++;
+            para.nextPagination();
         }
 
-        buildScript(currentAge);
+        buildScript(para.getCurrentPageNumber());
         requestNextCard(site);
     }
 
@@ -75,7 +74,7 @@ public abstract class FeedCoordinatorBase {
     }
 
     public int getAge() {
-        return currentAge;
+        return para.getCurrentPageNumber();
     }
 
     public int dismissCard(@NonNull Card card) {
