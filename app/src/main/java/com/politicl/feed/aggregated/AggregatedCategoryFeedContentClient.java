@@ -36,8 +36,8 @@ public class AggregatedCategoryFeedContentClient implements FeedClient {
         String endpoint = String.format(Locale.ROOT, Prefs.getRestbaseUriFormat(), "http", site.authority());
         Retrofit retrofit = RetrofitFactory.newInstance(site, endpoint);
         AggregatedCategoryFeedContentClient.Service service = retrofit.create(Service.class);
-        call = service.get(age, 1);
-        call.enqueue(new CallbackAdapter(cb, site, age));
+        call = service.get(pagination.getCurrentPageNumber(), pagination.getCategory_id());
+        call.enqueue(new CallbackAdapter(cb, site, pagination));
     }
 
     @Override
@@ -53,7 +53,7 @@ public class AggregatedCategoryFeedContentClient implements FeedClient {
 
         /**
          * Gets aggregated content for the feed for the date provided.
-         * <p/>
+         * <p>
          * like: http://www.politicl.com/api/get_recent_posts/?page={num}
          *
          * @param num the index of the pagination
@@ -68,23 +68,22 @@ public class AggregatedCategoryFeedContentClient implements FeedClient {
         private final Callback cb;
         @NonNull
         private final Site site;
-        private final int age;
+        private final RestQueryPara queryPara;
 
-        CallbackAdapter(@NonNull Callback cb, @NonNull Site site, int age) {
+        CallbackAdapter(@NonNull Callback cb, @NonNull Site site, RestQueryPara queryPara) {
             this.cb = cb;
             this.site = site;
-            this.age = age;
+            this.queryPara = queryPara;
         }
 
         @Override
         public void onResponse(Call<AggregatedFeedContent> call,
                                Response<AggregatedFeedContent> response) {
             if (response.isSuccessful()) {
-                UtcDate date = DateUtil.getUtcRequestDateFor(age);
                 List<Card> cards = new ArrayList<>();
                 AggregatedFeedContent content = response.body();
                 if (content != null) {
-                    content.appendPostToCard(cards, this.site);
+                    content.appendPostToCard(cards, this.site,this.queryPara);
                 }
                 cb.success(cards);
             } else {

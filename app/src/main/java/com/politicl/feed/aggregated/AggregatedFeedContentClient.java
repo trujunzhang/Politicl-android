@@ -8,7 +8,6 @@ import android.support.annotation.Nullable;
 import com.politicl.Site;
 import com.politicl.dataclient.retrofit.RetrofitFactory;
 import com.politicl.feed.dataclient.FeedClient;
-import com.politicl.feed.featured.FeaturedArticleCard;
 import com.politicl.feed.model.Card;
 import com.politicl.feed.model.UtcDate;
 import com.politicl.settings.Prefs;
@@ -24,7 +23,6 @@ import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public class AggregatedFeedContentClient implements FeedClient {
@@ -87,7 +85,7 @@ public class AggregatedFeedContentClient implements FeedClient {
                 List<Card> cards = new ArrayList<>();
                 AggregatedFeedContent content = response.body();
                 if (content != null) {
-                    content.appendPostToCard(cards,this.site);
+                    content.appendPostToCard(cards,this.site, this.queryPara);
                 }
                 cb.success(cards);
             } else {

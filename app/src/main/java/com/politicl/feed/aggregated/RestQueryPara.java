@@ -23,6 +23,10 @@ public class RestQueryPara {
         return totalPages;
     }
 
+    public void setTotalPages(int totalPages){
+        this.totalPages = totalPages;
+    }
+
     public int getCategory_id() {
         return category_id;
     }
