@@ -30,7 +30,7 @@ public class AggregatedCategoryFeedContentClient implements FeedClient {
     private Call<AggregatedFeedContent> call;
 
     @Override
-    public void request(@NonNull Context context, @NonNull Site site, int age, @NonNull Callback cb) {
+    public void request(@NonNull Context context, @NonNull Site site, RestQueryPara pagination, @NonNull Callback cb) {
         cancel();
         // TODO: Use app retrofit, etc., when feed endpoints are deployed to production
         String endpoint = String.format(Locale.ROOT, Prefs.getRestbaseUriFormat(), "http", site.authority());
