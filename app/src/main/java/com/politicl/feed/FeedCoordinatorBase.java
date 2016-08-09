@@ -56,7 +56,7 @@ public abstract class FeedCoordinatorBase {
         }
         pendingClients.clear();
         cards.clear();
-        appendProgressCard(cards);
+//        appendProgressCard(cards);
     }
 
     public void more(@NonNull Site site) {

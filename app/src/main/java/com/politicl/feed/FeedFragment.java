@@ -117,6 +117,7 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
             public void onRefresh() {
                 funnel.refresh(coordinator.getCurrentPageNumber());
                 coordinator.reset();
+                feedView.update();
                 coordinator.more(app.getSite());
             }
         });
