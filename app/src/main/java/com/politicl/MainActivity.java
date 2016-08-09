@@ -323,7 +323,6 @@ public class MainActivity extends AppCompatActivity {
         showFeed(new RestQueryPara(category_id));
     }
 
-
     private class MainDrawerToggle extends ActionBarDrawerToggle {
         private boolean oncePerSlideLock = false;
 
