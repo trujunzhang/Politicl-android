@@ -142,7 +142,6 @@ public class MainActivity extends AppCompatActivity {
         return navItemSelected;
     }
 
-
     private void updateToolbarForFragment() {
         if (getTopFragment() instanceof MainActivityToolbarProvider) {
             toolbarCoordinator.setOverrideToolbar(((MainActivityToolbarProvider) getTopFragment()).getToolbar());
@@ -295,7 +294,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleIntent(Intent intent) {
-        showFeed(new RestQueryPara(1, "Top Story"));
+        showFeed(new RestQueryPara("Politicl"));
+//        showFeed(new RestQueryPara(1, "Top Story"));
     }
 
 

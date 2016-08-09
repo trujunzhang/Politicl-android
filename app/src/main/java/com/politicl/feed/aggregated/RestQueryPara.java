@@ -11,6 +11,7 @@ public class RestQueryPara implements Parcelable {
     private int category_id;
     private String title;
 
+
     public RestQueryPara(String title) {
         currentPageNumber = 1;
         totalPages = 1;
