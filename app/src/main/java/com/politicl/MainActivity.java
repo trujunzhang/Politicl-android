@@ -70,6 +70,7 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import static com.politicl.util.DeviceUtil.hideSoftKeyboard;
 import static com.politicl.util.DeviceUtil.isBackKeyUp;
 
 public class MainActivity extends AppCompatActivity {
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerToggle = new ActionBarDrawerToggle(
+        mDrawerToggle = new MainDrawerToggle(
                 this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
@@ -317,6 +318,10 @@ public class MainActivity extends AppCompatActivity {
                 || super.dispatchKeyEvent(event);
     }
 
+    public void toggleFragment(int category_id) {
+
+    }
+
 
     private class MainDrawerToggle extends ActionBarDrawerToggle {
         private boolean oncePerSlideLock = false;
@@ -327,24 +332,24 @@ public class MainActivity extends AppCompatActivity {
             super(activity, drawerLayout, openDrawerContentDescRes, closeDrawerContentDescRes);
         }
 
-//        @Override
-//        public void onDrawerClosed(View view) {
-//            super.onDrawerClosed(view);
-//            // if we want to change the title upon closing:
-//            //getSupportActionBar().setTitle("");
-//            if (!wasNavItemSelected()) {
-//                navDrawerHelper.getFunnel().logCancel();
-//            }
-//            navDrawerHelper.clearTempExplicitHighlight();
-//            setNavItemSelected(false);
-//        }
-//
-//        @Override
-//        public void onDrawerOpened(View drawerView) {
-//            super.onDrawerOpened(drawerView);
-//            // if we want to change the title upon opening:
-//            //getSupportActionBar().setTitle("");
-//            // If we're in the search state, then get out of it.
+        @Override
+        public void onDrawerClosed(View view) {
+            super.onDrawerClosed(view);
+            // if we want to change the title upon closing:
+            //getSupportActionBar().setTitle("");
+            if (!wasNavItemSelected()) {
+                navDrawerHelper.getFunnel().logCancel();
+            }
+            navDrawerHelper.clearTempExplicitHighlight();
+            setNavItemSelected(false);
+        }
+
+        @Override
+        public void onDrawerOpened(View drawerView) {
+            super.onDrawerOpened(drawerView);
+            // if we want to change the title upon opening:
+            //getSupportActionBar().setTitle("");
+            // If we're in the search state, then get out of it.
 //            if (isSearching()) {
 //                searchFragment.closeSearch();
 //            }
@@ -353,26 +358,26 @@ public class MainActivity extends AppCompatActivity {
 //                finishActionMode();
 //            }
 //            updateNavDrawerSelection(getTopFragment());
-//            navDrawerHelper.getFunnel().logOpen();
-//        }
-//
-//        @Override
-//        public void onDrawerSlide(View drawerView, float slideOffset) {
-//            super.onDrawerSlide(drawerView, 0);
-//            if (!oncePerSlideLock) {
-//                // Hide the keyboard when the drawer is opened
-//                hideSoftKeyboard(MainActivity.this);
-//                //also make sure ToC is hidden
+            navDrawerHelper.getFunnel().logOpen();
+        }
+
+        @Override
+        public void onDrawerSlide(View drawerView, float slideOffset) {
+            super.onDrawerSlide(drawerView, 0);
+            if (!oncePerSlideLock) {
+                // Hide the keyboard when the drawer is opened
+                hideSoftKeyboard(MainActivity.this);
+                //also make sure ToC is hidden
 //                if (getCurPageFragment() != null) {
 //                    getCurPageFragment().toggleToC(PageFragment.TOC_ACTION_HIDE);
 //                }
-//                //and make sure to update dynamic items and highlights
+                //and make sure to update dynamic items and highlights
 //                navDrawerHelper.setupDynamicNavDrawerItems();
-//                oncePerSlideLock = true;
-//            }
-//            // and make sure the Toolbar is showing
+                oncePerSlideLock = true;
+            }
+            // and make sure the Toolbar is showing
 //            showToolbar();
-//        }
+        }
 
         @Override
         public void onDrawerStateChanged(int newState) {
