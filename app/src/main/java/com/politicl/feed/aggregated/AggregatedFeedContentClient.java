@@ -31,14 +31,14 @@ public class AggregatedFeedContentClient implements FeedClient {
     private Call<AggregatedFeedContent> call;
 
     @Override
-    public void request(@NonNull Context context, @NonNull Site site, int age, @NonNull Callback cb) {
+    public void request(@NonNull Context context, @NonNull Site site, RestQueryPara para, @NonNull Callback cb) {
         cancel();
         // TODO: Use app retrofit, etc., when feed endpoints are deployed to production
         String endpoint = String.format(Locale.ROOT, Prefs.getRestbaseUriFormat(), "http", site.authority());
         Retrofit retrofit = RetrofitFactory.newInstance(site, endpoint);
         AggregatedFeedContentClient.Service service = retrofit.create(Service.class);
-        call = service.get(age);
-        call.enqueue(new CallbackAdapter(cb, site, age));
+        call = service.get(para.getCurrentPageNumber());
+        call.enqueue(new CallbackAdapter(cb, site, para));
     }
 
     @Override
@@ -69,19 +69,18 @@ public class AggregatedFeedContentClient implements FeedClient {
         private final Callback cb;
         @NonNull
         private final Site site;
-        private final int age;
+        private final RestQueryPara queryPara;
 
-        CallbackAdapter(@NonNull Callback cb, @NonNull Site site, int age) {
+        CallbackAdapter(@NonNull Callback cb, @NonNull Site site, RestQueryPara queryPara) {
             this.cb = cb;
             this.site = site;
-            this.age = age;
+            this.queryPara = queryPara;
         }
 
         @Override
         public void onResponse(Call<AggregatedFeedContent> call,
                                Response<AggregatedFeedContent> response) {
             if (response.isSuccessful()) {
-                UtcDate date = DateUtil.getUtcRequestDateFor(age);
                 List<Card> cards = new ArrayList<>();
                 AggregatedFeedContent content = response.body();
                 if (content != null) {

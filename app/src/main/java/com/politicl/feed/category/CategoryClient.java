@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 
 import com.politicl.Site;
 import com.politicl.dataclient.retrofit.RetrofitFactory;
+import com.politicl.feed.aggregated.RestQueryPara;
 import com.politicl.feed.dataclient.FeedClient;
 import com.politicl.feed.featured.FeaturedArticleCard;
 import com.politicl.feed.model.Card;
@@ -34,7 +35,7 @@ public class CategoryClient implements FeedClient {
     private Call<CategoryContent> call;
 
     @Override
-    public void request(@NonNull Context context, @NonNull Site site, int age, @NonNull Callback cb) {
+    public void request(@NonNull Context context, @NonNull Site site, RestQueryPara para, @NonNull Callback cb) {
         cancel();
         // TODO: Use app retrofit, etc., when feed endpoints are deployed to production
         String endpoint = String.format(Locale.ROOT, Prefs.getRestbaseUriFormat(), "http", site.authority());
