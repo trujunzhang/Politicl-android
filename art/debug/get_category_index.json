@@ -1,0 +1,70 @@
+{
+  "status": "ok",
+  "count": 8,
+  "categories": [
+    {
+      "id": 1,
+      "slug": "top-stories",
+      "title": "Top Stories",
+      "description": "",
+      "parent": 0,
+      "post_count": 666
+    },
+    {
+      "id": 125,
+      "slug": "politics",
+      "title": "Politics",
+      "description": "",
+      "parent": 0,
+      "post_count": 2706
+    },
+    {
+      "id": 126,
+      "slug": "economy",
+      "title": "Economy",
+      "description": "",
+      "parent": 0,
+      "post_count": 1353
+    },
+    {
+      "id": 127,
+      "slug": "foreign-affairs",
+      "title": "Foreign Affairs",
+      "description": "",
+      "parent": 0,
+      "post_count": 1219
+    },
+    {
+      "id": 128,
+      "slug": "defence",
+      "title": "Defence",
+      "description": "",
+      "parent": 0,
+      "post_count": 342
+    },
+    {
+      "id": 129,
+      "slug": "education",
+      "title": "Education",
+      "description": "",
+      "parent": 0,
+      "post_count": 163
+    },
+    {
+      "id": 130,
+      "slug": "healthcare",
+      "title": "Healthcare",
+      "description": "",
+      "parent": 0,
+      "post_count": 125
+    },
+    {
+      "id": 131,
+      "slug": "sustainability",
+      "title": "Sustainability",
+      "description": "",
+      "parent": 0,
+      "post_count": 278
+    }
+  ]
+}
