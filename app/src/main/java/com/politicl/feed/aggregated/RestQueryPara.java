@@ -13,11 +13,13 @@ public class RestQueryPara implements Parcelable {
     public RestQueryPara() {
         currentPageNumber = 1;
         totalPages = 1;
+        allArticles = true;
     }
 
     public RestQueryPara(int category_id) {
         this();
         this.category_id = category_id;
+        allArticles = false;
     }
 
     public static final Creator<RestQueryPara> CREATOR = new Creator<RestQueryPara>() {
@@ -72,5 +74,9 @@ public class RestQueryPara implements Parcelable {
 
     public void nextPagination() {
         currentPageNumber += 1;
+    }
+
+    public boolean isAllArticles() {
+        return allArticles;
     }
 }
