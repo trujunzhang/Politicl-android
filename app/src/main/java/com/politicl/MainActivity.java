@@ -319,7 +319,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toggleFragment(int category_id) {
-
+        showFeed();
     }
 
 

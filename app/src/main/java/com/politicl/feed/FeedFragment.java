@@ -40,6 +40,8 @@ import butterknife.Unbinder;
 
 public class FeedFragment extends Fragment implements BackPressedHandler,
         MainActivityToolbarProvider {
+
+    public static final String ARG_REST_PARA = "REST_PARA";
     @BindView(R.id.feed_app_bar_layout)
     AppBarLayout appBarLayout;
     @BindView(R.id.feed_swipe_refresh_layout)
@@ -73,8 +75,11 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     }
 
     @NonNull
-    public static FeedFragment newInstance() {
+    public static FeedFragment newInstance(@Nullable RestQueryPara para) {
         FeedFragment fragment = new FeedFragment();
+        Bundle args = new Bundle();
+        args.putParcelable(ARG_REST_PARA, para);
+        fragment.setArguments(args);
         fragment.setRetainInstance(true);
         return fragment;
     }
