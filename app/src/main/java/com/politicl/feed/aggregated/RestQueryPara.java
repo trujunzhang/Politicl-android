@@ -81,4 +81,8 @@ public class RestQueryPara implements Parcelable {
     public boolean isAllArticles() {
         return allArticles;
     }
+
+    public String getTitle(){
+        return title;
+    }
 }

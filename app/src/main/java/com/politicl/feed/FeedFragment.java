@@ -132,6 +132,8 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
             }
         });
 
+        toolbar.setTitle(para.getTitle());
+
         return view;
     }
 
