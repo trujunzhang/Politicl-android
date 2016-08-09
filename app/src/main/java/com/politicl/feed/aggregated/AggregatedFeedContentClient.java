@@ -5,7 +5,9 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 
+import com.politicl.PoliticlApp;
 import com.politicl.Site;
+import com.politicl.analytics.FeedFunnel;
 import com.politicl.dataclient.retrofit.RetrofitFactory;
 import com.politicl.feed.dataclient.FeedClient;
 import com.politicl.feed.model.Card;
@@ -34,6 +36,7 @@ public class AggregatedFeedContentClient implements FeedClient {
     public void request(@NonNull Context context, @NonNull Site site, RestQueryPara para, @NonNull Callback cb) {
         cancel();
         // TODO: Use app retrofit, etc., when feed endpoints are deployed to production
+        new FeedFunnel(PoliticlApp.getInstance()).logRestQueryPara(para);
         String endpoint = String.format(Locale.ROOT, Prefs.getRestbaseUriFormat(), "http", site.authority());
         Retrofit retrofit = RetrofitFactory.newInstance(site, endpoint);
         AggregatedFeedContentClient.Service service = retrofit.create(Service.class);

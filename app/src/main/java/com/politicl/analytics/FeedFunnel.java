@@ -2,6 +2,7 @@ package com.politicl.analytics;
 
 
 import com.politicl.PoliticlApp;
+import com.politicl.feed.aggregated.RestQueryPara;
 
 public class FeedFunnel extends Funnel {
     private static final String SCHEMA_NAME = "PoliticlAppFeed";
@@ -30,6 +31,14 @@ public class FeedFunnel extends Funnel {
                 "action", "dismiss",
                 "cardType", cardType,
                 "position", position
+        );
+    }
+
+    public void logRestQueryPara(RestQueryPara para) {
+        log(
+                "currentPageNumber", para.getCurrentPageNumber(),
+                "totalPages", para.getTotalPages(),
+                "category_id", para.getCategory_id()
         );
     }
 }

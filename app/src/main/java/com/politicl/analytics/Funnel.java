@@ -13,8 +13,10 @@ import org.json.JSONObject;
 
 import java.util.UUID;
 
-/** Schemas for this abstract funnel are expected to have appInstallID and sessionToken fields. When
- * these fields are not present or differently named, preprocess* or get*Field should be overridden. */
+/**
+ * Schemas for this abstract funnel are expected to have appInstallID and sessionToken fields. When
+ * these fields are not present or differently named, preprocess* or get*Field should be overridden.
+ */
 /*package*/ abstract class Funnel {
     protected static final int SAMPLE_LOG_1K = 1000;
     protected static final int SAMPLE_LOG_100 = 100;
@@ -30,7 +32,8 @@ import java.util.UUID;
     private final int sampleRate;
     private final String sampleRateRemoteParamName;
     private final PoliticlApp app;
-    @Nullable private final Site site;
+    @Nullable
+    private final Site site;
 
     private final String sessionToken = UUID.randomUUID().toString();
 
@@ -71,8 +74,10 @@ import java.util.UUID;
         return eventData;
     }
 
-    /** Invokes {@link JSONObject#put} on <code>data</code> and throws a {@link RuntimeException} on
-     * failure. */
+    /**
+     * Invokes {@link JSONObject#put} on <code>data</code> and throws a {@link RuntimeException} on
+     * failure.
+     */
     protected <T> void preprocessData(@NonNull JSONObject eventData, String key, T val) {
         try {
             eventData.put(key, val);
@@ -81,12 +86,16 @@ import java.util.UUID;
         }
     }
 
-    /** Invoked by {@link #preprocessData(JSONObject)}. */
+    /**
+     * Invoked by {@link #preprocessData(JSONObject)}.
+     */
     protected void preprocessAppInstallID(@NonNull JSONObject eventData) {
         preprocessData(eventData, getAppInstallIDField(), getAppInstallID());
     }
 
-    /** Invoked by {@link #preprocessData(JSONObject)}. */
+    /**
+     * Invoked by {@link #preprocessData(JSONObject)}.
+     */
     protected void preprocessSessionToken(@NonNull JSONObject eventData) {
         preprocessData(eventData, getSessionTokenField(), getSessionToken());
     }
@@ -98,59 +107,52 @@ import java.util.UUID;
     /**
      * Logs an event.
      *
-     * @param params        Actual data for the event. Considered to be an array
-     *                      of alternating key and value items (for easier
-     *                      use in subclass constructors).
-     *
-     *                      For example, what would be expressed in a more sane
-     *                      language as:
-     *
-     *                      .log({
-     *                          "page": "List of mass murderers",
-     *                          "section": "2014"
-     *                      });
-     *
-     *                      would be expressed here as
-     *
-     *                      .log(
-     *                          "page", "List of mass murderers",
-     *                          "section", "2014"
-     *                      );
-     *
-     *                      This format should be only used in subclass methods directly.
-     *                      The subclass methods should take more explicit parameters
-     *                      depending on what they are logging.
+     * @param params Actual data for the event. Considered to be an array
+     *               of alternating key and value items (for easier
+     *               use in subclass constructors).
+     *               <p>
+     *               For example, what would be expressed in a more sane
+     *               language as:
+     *               <p>
+     *               .log({
+     *               "page": "List of mass murderers",
+     *               "section": "2014"
+     *               });
+     *               <p>
+     *               would be expressed here as
+     *               <p>
+     *               .log(
+     *               "page", "List of mass murderers",
+     *               "section", "2014"
+     *               );
+     *               <p>
+     *               This format should be only used in subclass methods directly.
+     *               The subclass methods should take more explicit parameters
+     *               depending on what they are logging.
      */
     protected void log(@Nullable Site site, Object... params) {
-//        if (!app.isEventLoggingEnabled()) {
-//            // Do not send events if the user opted out of EventLogging
-//            return;
-//        }
-//
-//        int rate = getSampleRate();
-//        if (rate != SAMPLE_LOG_DISABLE) {
-//            boolean chosen = app.getEventLogSamplingID() % rate == 0 || app.isDevRelease();
-//
-//            if (chosen) {
-//                JSONObject eventData = new JSONObject();
-//
-//                //Build the string which is logged to debug EventLogging code
-//                String logString = this.getClass().getSimpleName() + ": Sending event";
-//                for (int i = 0; i < params.length; i += 2) {
-//                    preprocessData(eventData, params[i].toString(), params[i + 1]);
-//                    logString += ", event_" + params[i] + " = " + params[i + 1];
-//                }
-//                L.d(logString);
-//
-//                new EventLoggingEvent(
-//                        schemaName,
-//                        revision,
-//                        getDBNameForSite(site == null ? getApp().getSite() : site),
-//                        app.getUserAgent(),
-//                        preprocessData(eventData)
-//                ).log();
-//            }
-//        }
+        if (!app.isEventLoggingEnabled()) {
+            // Do not send events if the user opted out of EventLogging
+            return;
+        }
+
+        JSONObject eventData = new JSONObject();
+
+        //Build the string which is logged to debug EventLogging code
+        String logString = this.getClass().getSimpleName() + ": Sending event";
+        for (int i = 0; i < params.length; i += 2) {
+            preprocessData(eventData, params[i].toString(), params[i + 1]);
+            logString += ", event_" + params[i] + " = " + params[i + 1];
+        }
+        L.d(logString);
+
+        new EventLoggingEvent(
+                schemaName,
+                revision,
+                getDBNameForSite(site == null ? getApp().getSite() : site),
+                app.getUserAgent(),
+                preprocessData(eventData)
+        ).log();
     }
 
     /**
@@ -162,23 +164,35 @@ import java.util.UUID;
 //        return app.getRemoteConfig().getConfig().optInt(sampleRateRemoteParamName, sampleRate);
 //    }
 
-    /** @return The application installation identifier field used by {@link #preprocessAppInstallID}. */
-    @NonNull protected String getAppInstallIDField() {
+    /**
+     * @return The application installation identifier field used by {@link #preprocessAppInstallID}.
+     */
+    @NonNull
+    protected String getAppInstallIDField() {
         return DEFAULT_APP_INSTALL_ID_KEY;
     }
 
-    /** @return The session identifier field used by {@link #preprocessSessionToken}. */
-    @NonNull protected String getSessionTokenField() {
+    /**
+     * @return The session identifier field used by {@link #preprocessSessionToken}.
+     */
+    @NonNull
+    protected String getSessionTokenField() {
         return DEFAULT_SESSION_TOKEN_KEY;
     }
 
-    /** @return The application installation identifier used by {@link #preprocessAppInstallID}. */
-    @Nullable protected String getAppInstallID() {
+    /**
+     * @return The application installation identifier used by {@link #preprocessAppInstallID}.
+     */
+    @Nullable
+    protected String getAppInstallID() {
         return getApp().getAppInstallID();
     }
 
-    /** @return The session identifier used by {@link #preprocessSessionToken}. */
-    @Nullable protected String getSessionToken() {
+    /**
+     * @return The session identifier used by {@link #preprocessSessionToken}.
+     */
+    @Nullable
+    protected String getSessionToken() {
         return sessionToken;
     }
 

@@ -89,4 +89,13 @@ public class PoliticlApp extends Application {
         return site;
     }
 
+    /**
+     * Gets whether EventLogging is currently enabled or disabled.
+     *
+     * @return A boolean that is true if EventLogging is enabled, and false if it is not.
+     */
+    public boolean isEventLoggingEnabled() {
+        return Prefs.isEventLoggingEnabled();
+    }
+
 }
