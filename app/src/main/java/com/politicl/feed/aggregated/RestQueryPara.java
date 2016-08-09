@@ -5,14 +5,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class RestQueryPara implements Parcelable {
-    private int currentPageNumber = 1;
+    private int currentPageNumber;
     private int totalPages;
     private int category_id;
 
     public RestQueryPara() {
+        currentPageNumber = 1;
+        totalPages = 1;
     }
 
     public RestQueryPara(int category_id) {
+        this();
         this.category_id = category_id;
     }
 

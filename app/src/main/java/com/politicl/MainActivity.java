@@ -20,6 +20,7 @@ import android.view.View;
 
 import com.politicl.feed.FeedFragment;
 import com.politicl.feed.NavDrawerHelper;
+import com.politicl.feed.aggregated.RestQueryPara;
 import com.politicl.tooltip.ToolTipUtil;
 
 import org.apache.commons.lang3.ArrayUtils;
@@ -208,12 +209,12 @@ public class MainActivity extends AppCompatActivity {
         return getSupportFragmentManager().findFragmentById(R.id.content_fragment_container);
     }
 
-    public void showFeed() {
+    public void showFeed(RestQueryPara para) {
         if (getTopFragment() instanceof FeedFragment) {
             ((FeedFragment) getTopFragment()).scrollToTop();
         } else {
             popTopFragmentsExcept(FeedFragment.class);
-            pushFragment(FeedFragment.newInstance());
+            pushFragment(FeedFragment.newInstance(para));
         }
     }
 
@@ -294,7 +295,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleIntent(Intent intent) {
-        showFeed();
+        showFeed(new RestQueryPara());
     }
 
 
@@ -319,7 +320,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toggleFragment(int category_id) {
-        showFeed();
+        showFeed(new RestQueryPara(category_id));
     }
 
 

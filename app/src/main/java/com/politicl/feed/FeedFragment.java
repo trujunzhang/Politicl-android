@@ -59,7 +59,8 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     private int searchIconShowThresholdPx;
     private boolean searchIconVisible;
 
-    private RestQueryPara para = new RestQueryPara();
+    @Nullable
+    private RestQueryPara para;
 
     public interface Callback {
         void onFeedSearchRequested();
@@ -87,6 +88,7 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        para = getArguments().getParcelable(ARG_REST_PARA);
         app = PoliticlApp.getInstance();
         coordinator = new FeedCoordinator(getContext(), para);
         coordinator.more(app.getSite());
