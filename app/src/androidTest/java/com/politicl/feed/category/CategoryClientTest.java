@@ -12,6 +12,7 @@ import android.test.ActivityInstrumentationTestCase2;
 import com.politicl.MainActivity;
 import com.politicl.PoliticlApp;
 import com.politicl.Site;
+import com.politicl.feed.aggregated.RestQueryPara;
 import com.politicl.feed.dataclient.FeedClient;
 
 import org.junit.Test;
@@ -46,7 +47,7 @@ public class CategoryClientTest extends ActivityInstrumentationTestCase2<MainAct
     }
 
     public void testFetcher() {
-        new CategoryClient().request(mActivity.getApplicationContext(), PoliticlApp.getInstance().getSite(), -1, new FeedClient.Callback() {
+        new CategoryClient().request(mActivity.getApplicationContext(), PoliticlApp.getInstance().getSite(), new RestQueryPara(), new FeedClient.Callback() {
             @Override
             public void success(@NonNull List<? extends Card> cards) {
                 completionLatch.countDown();

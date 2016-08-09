@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import com.politicl.Site;
+import com.politicl.feed.aggregated.RestQueryPara;
 import com.politicl.feed.category.MenuCategoryItem;
 import com.politicl.feed.dataclient.FeedClient;
 import com.politicl.feed.model.Card;
@@ -14,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class FeedCoordinatorBase {
+
+    private RestQueryPara para;
 
     public interface FeedUpdateListener {
         void update(List<Card> cards);
@@ -32,8 +35,9 @@ public abstract class FeedCoordinatorBase {
     private FeedClient.Callback exhaustionClientCallback = new ExhaustionClientCallback();
     private Card progressCard = new ProgressCard();
 
-    public FeedCoordinatorBase(@NonNull Context context) {
+    public FeedCoordinatorBase(@NonNull Context context, RestQueryPara para) {
         this.context = context;
+        this.para = para;
     }
 
     @NonNull
@@ -100,7 +104,7 @@ public abstract class FeedCoordinatorBase {
         if (pendingClients.isEmpty()) {
             return;
         }
-        pendingClients.remove(0).request(context, site, currentAge, exhaustionClientCallback);
+        pendingClients.remove(0).request(context, site, this.para, exhaustionClientCallback);
     }
 
     private class ExhaustionClientCallback implements FeedClient.Callback {

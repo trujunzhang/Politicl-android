@@ -23,6 +23,7 @@ import com.politicl.PoliticlApp;
 import com.politicl.R;
 import com.politicl.activity.FragmentUtil;
 import com.politicl.analytics.FeedFunnel;
+import com.politicl.feed.aggregated.RestQueryPara;
 import com.politicl.feed.model.Card;
 import com.politicl.feed.view.FeedRecyclerAdapter;
 import com.politicl.feed.view.FeedView;
@@ -56,8 +57,11 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     private int searchIconShowThresholdPx;
     private boolean searchIconVisible;
 
+    private RestQueryPara para = new RestQueryPara();
+
     public interface Callback {
         void onFeedSearchRequested();
+
         void onFeedVoiceSearchRequested();
 //        void onFeedSelectPage(HistoryEntry entry);
 //        void onFeedAddPageToList(HistoryEntry entry);
@@ -68,7 +72,8 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
 //        void onFeaturedImageSelected(FeaturedImageCard card);
     }
 
-    @NonNull public static FeedFragment newInstance() {
+    @NonNull
+    public static FeedFragment newInstance() {
         FeedFragment fragment = new FeedFragment();
         fragment.setRetainInstance(true);
         return fragment;
@@ -78,15 +83,17 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         app = PoliticlApp.getInstance();
-        coordinator = new FeedCoordinator(getContext());
+        coordinator = new FeedCoordinator(getContext(), para);
         coordinator.more(app.getSite());
         funnel = new FeedFunnel(app);
         Prefs.pageLastShown(0);
     }
 
-    @Nullable @Override public View onCreateView(LayoutInflater inflater,
-                                                 @Nullable ViewGroup container,
-                                                 @Nullable Bundle savedInstanceState) {
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_feed, container, false);
 
@@ -173,7 +180,8 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
         feedView.smoothScrollToPosition(0);
     }
 
-    @Nullable private Callback getCallback() {
+    @Nullable
+    private Callback getCallback() {
         return FragmentUtil.getCallback(this, Callback.class);
     }
 
