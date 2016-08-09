@@ -55,7 +55,7 @@ public class NavDrawerHelper {
 //        accountNameArrow = (ImageView) navDrawerHeader.findViewById(R.id.nav_account_arrow);
 //        updateMenuGroupToggle();
 
-        new CategoryClient().request(activity.getApplicationContext(), PoliticlApp.getInstance().getSite(), new RestQueryPara(), new FeedClient.Callback() {
+        new CategoryClient().request(activity.getApplicationContext(), PoliticlApp.getInstance().getSite(), null, new FeedClient.Callback() {
             @Override
             public void success(@NonNull List<? extends Card> cards) {
 
