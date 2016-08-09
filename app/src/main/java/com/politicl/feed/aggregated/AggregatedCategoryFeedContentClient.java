@@ -36,7 +36,7 @@ public class AggregatedCategoryFeedContentClient implements FeedClient {
         String endpoint = String.format(Locale.ROOT, Prefs.getRestbaseUriFormat(), "http", site.authority());
         Retrofit retrofit = RetrofitFactory.newInstance(site, endpoint);
         AggregatedCategoryFeedContentClient.Service service = retrofit.create(Service.class);
-        call = service.get(pagination.getCurrentPageNumber(), pagination.getCategory_id());
+        call = service.getPostsByCategoryId(pagination.getCurrentPageNumber(), pagination.getCategory_id());
         call.enqueue(new CallbackAdapter(cb, site, pagination));
     }
 
@@ -60,7 +60,7 @@ public class AggregatedCategoryFeedContentClient implements FeedClient {
          */
         @NonNull
         @GET("get_category_posts")
-        Call<AggregatedFeedContent> get(@Query("page") int num, @Query("category_id") int category_id);
+        Call<AggregatedFeedContent> getPostsByCategoryId(@Query("page") int num, @Query("category_id") int category_id);
     }
 
     private static class CallbackAdapter implements retrofit2.Callback<AggregatedFeedContent> {
@@ -83,7 +83,7 @@ public class AggregatedCategoryFeedContentClient implements FeedClient {
                 List<Card> cards = new ArrayList<>();
                 AggregatedFeedContent content = response.body();
                 if (content != null) {
-                    content.appendPostToCard(cards, this.site,this.queryPara);
+                    content.appendPostToCard(cards, this.site, this.queryPara);
                 }
                 cb.success(cards);
             } else {
