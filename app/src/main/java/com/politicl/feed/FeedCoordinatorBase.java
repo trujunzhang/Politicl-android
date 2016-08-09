@@ -73,7 +73,7 @@ public abstract class FeedCoordinatorBase {
         return pendingClients.isEmpty();
     }
 
-    public int getAge() {
+    public int getCurrentPageNumber() {
         return para.getCurrentPageNumber();
     }
 

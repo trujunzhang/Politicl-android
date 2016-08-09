@@ -12,17 +12,17 @@ public class FeedFunnel extends Funnel {
         super(app, SCHEMA_NAME, REVISION, Funnel.SAMPLE_LOG_100);
     }
 
-    public void requestMore(int age) {
+    public void requestMore(int currentPageNumber) {
         log(
                 "action", "more",
-                "age", age
+                "currentPageNumber", currentPageNumber
         );
     }
 
-    public void refresh(int age) {
+    public void refresh(int currentPageNumber) {
         log(
                 "action", "refresh",
-                "age", age
+                "currentPageNumber", currentPageNumber
         );
     }
 

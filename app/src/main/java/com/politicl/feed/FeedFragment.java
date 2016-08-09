@@ -6,7 +6,6 @@ import android.support.annotation.IntRange;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.Toolbar;
@@ -30,7 +29,6 @@ import com.politicl.feed.view.FeedView;
 import com.politicl.feed.view.FeedViewCallback;
 import com.politicl.settings.Prefs;
 import com.politicl.util.DimenUtil;
-import com.politicl.util.FeedbackUtil;
 
 import java.util.List;
 
@@ -117,7 +115,7 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                funnel.refresh(coordinator.getAge());
+                funnel.refresh(coordinator.getCurrentPageNumber());
                 coordinator.reset();
                 coordinator.more(app.getSite());
             }
@@ -195,7 +193,7 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     private class FeedCallback implements FeedViewCallback {
         @Override
         public void onRequestMore() {
-            funnel.requestMore(coordinator.getAge());
+            funnel.requestMore(coordinator.getCurrentPageNumber());
             coordinator.more(app.getSite());
         }
 
