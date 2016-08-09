@@ -36,7 +36,7 @@ public class AggregatedCategoryFeedContentClient implements FeedClient {
         String endpoint = String.format(Locale.ROOT, Prefs.getRestbaseUriFormat(), "http", site.authority());
         Retrofit retrofit = RetrofitFactory.newInstance(site, endpoint);
         AggregatedCategoryFeedContentClient.Service service = retrofit.create(Service.class);
-        call = service.get(age, -1);
+        call = service.get(age, 1);
         call.enqueue(new CallbackAdapter(cb, site, age));
     }
 

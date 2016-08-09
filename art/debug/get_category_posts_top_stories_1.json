@@ -1,0 +1,2480 @@
+{
+  "status": "ok",
+  "count": 12,
+  "pages": 56,
+  "category": {
+    "id": 1,
+    "slug": "top-stories",
+    "title": "Top Stories",
+    "description": "",
+    "parent": 0,
+    "post_count": 666
+  },
+  "posts": [
+    {
+      "id": 25312,
+      "type": "post",
+      "slug": "gujarats-change-guard",
+      "url": "http:\/\/www.politicl.com\/gujarats-change-guard\/",
+      "status": "publish",
+      "title": "Gujarat\u2019s change of guard",
+      "title_plain": "Gujarat\u2019s change of guard",
+      "content": "<p>Having turned down the chance to be king, Amit Shah played the kingmaker. As the national president of the Bharatiya Janata Party, it was natural that he considered the post of Gujarat Chief Minister a political demotion. But he did not let go of the opportunity to handpick his own man to head the government in Gujarat. That Mr. Shah could trump caste calculations and have his prot\u00e9g\u00e9 Vijay Rupani elected to the post is an indication of the clout he wields at all levels in the party, and the influence he has on Prime Minister Narendra Modi even with regard to decisions relating to Gujarat, their home State. Mr. Rupani, like Mr. Shah, is more an organisation man with not much by way of administrative experience. A first-time member of the Assembly, he was pushed ahead of Nitin Patel, who will have to be content with being the Deputy Chief Minister despite coming from a dominant caste and laying claim to a wider political base. <\/p>\n",
+      "excerpt": "<p>Having turned down the chance to be king, Amit Shah played the kingmaker. As the national president of the Bharatiya Janata Party, it was natural that he considered the post of Gujarat Chief Minister a political demotion. But he did not let go of the opportunity to handpick his own man to head the government <\/p>\n",
+      "date": "2016-08-08 12:09:11",
+      "modified": "2016-08-08 12:09:11",
+      "categories": [
+        {
+          "id": 125,
+          "slug": "politics",
+          "title": "Politics",
+          "description": "",
+          "parent": 0,
+          "post_count": 2706
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 11,
+        "slug": "the-hindu",
+        "name": "The Hindu",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "The Hindu",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [
+        {
+          "id": 25327,
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/Vijayrupani.jpg",
+          "slug": "vijayrupani",
+          "title": "Vijayrupani",
+          "description": "",
+          "caption": "",
+          "parent": 25312,
+          "mime_type": "image\/jpeg",
+          "images": []
+        },
+        {
+          "id": 25328,
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+          "slug": "vbk-vijay_rupani_2962757g",
+          "title": "VBK-VIJAY_RUPANI_2962757g",
+          "description": "",
+          "caption": "",
+          "parent": 25312,
+          "mime_type": "image\/jpeg",
+          "images": {
+            "full": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+              "width": 573,
+              "height": 430
+            },
+            "thumbnail": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-100x100.jpg",
+              "width": 100,
+              "height": 100
+            },
+            "medium": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-400x300.jpg",
+              "width": 400,
+              "height": 300
+            },
+            "medium_large": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+              "width": 573,
+              "height": 430
+            },
+            "large": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+              "width": 573,
+              "height": 430
+            },
+            "td_0x420": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-560x420.jpg",
+              "width": 560,
+              "height": 420
+            },
+            "td_80x60": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-80x60.jpg",
+              "width": 80,
+              "height": 60
+            },
+            "td_100x75": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-100x75.jpg",
+              "width": 100,
+              "height": 75
+            },
+            "td_180x135": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-180x135.jpg",
+              "width": 180,
+              "height": 135
+            },
+            "td_238x178": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-238x178.jpg",
+              "width": 238,
+              "height": 178
+            },
+            "td_300x160": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-300x160.jpg",
+              "width": 300,
+              "height": 160
+            },
+            "td_300x194": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-300x194.jpg",
+              "width": 300,
+              "height": 194
+            },
+            "td_300x350": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-300x350.jpg",
+              "width": 300,
+              "height": 350
+            },
+            "td_341x220": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-341x220.jpg",
+              "width": 341,
+              "height": 220
+            },
+            "td_537x360": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-537x360.jpg",
+              "width": 537,
+              "height": 360
+            },
+            "td_640x0": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+              "width": 573,
+              "height": 430
+            },
+            "td_640x350": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-573x350.jpg",
+              "width": 573,
+              "height": 350
+            },
+            "td_681x0": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+              "width": 573,
+              "height": 430
+            },
+            "td_1021x580": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+              "width": 573,
+              "height": 430
+            },
+            "td_511x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-511x400.jpg",
+              "width": 511,
+              "height": 400
+            },
+            "td_341x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-341x400.jpg",
+              "width": 341,
+              "height": 400
+            },
+            "td_681x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-573x400.jpg",
+              "width": 573,
+              "height": 400
+            }
+          }
+        }
+      ],
+      "comment_count": 0,
+      "comment_status": "closed",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-100x100.jpg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/www.thehindu.com\/opinion\/editorial\/editorial-gujarats-new-chief-minister-vijay-rupani-bjp-amit-shah\/article8955943.ece"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+          "width": 573,
+          "height": 430
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-100x100.jpg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-400x300.jpg",
+          "width": 400,
+          "height": 300
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+          "width": 573,
+          "height": 430
+        },
+        "large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+          "width": 573,
+          "height": 430
+        },
+        "td_0x420": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-560x420.jpg",
+          "width": 560,
+          "height": 420
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-80x60.jpg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-100x75.jpg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-180x135.jpg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-238x178.jpg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-300x160.jpg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-300x194.jpg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-300x350.jpg",
+          "width": 300,
+          "height": 350
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-341x220.jpg",
+          "width": 341,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-537x360.jpg",
+          "width": 537,
+          "height": 360
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+          "width": 573,
+          "height": 430
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-573x350.jpg",
+          "width": 573,
+          "height": 350
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+          "width": 573,
+          "height": 430
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g.jpg",
+          "width": 573,
+          "height": 430
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-511x400.jpg",
+          "width": 511,
+          "height": 400
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-341x400.jpg",
+          "width": 341,
+          "height": 400
+        },
+        "td_681x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/VBK-VIJAY_RUPANI_2962757g-573x400.jpg",
+          "width": 573,
+          "height": 400
+        }
+      }
+    },
+    {
+      "id": 25317,
+      "type": "post",
+      "slug": "making-our-roads-safe",
+      "url": "http:\/\/www.politicl.com\/making-our-roads-safe\/",
+      "status": "publish",
+      "title": "Making our roads safe",
+      "title_plain": "Making our roads safe",
+      "content": "<p>Last month, yet another pothole claimed yet another man. Praveen, 45, was crushed to death by a tanker when his motorcycle fell into a rainwater-filled pothole in New Delhi. In more alarming news, official figures show that in 2015 alone, over 10,800 accidents in India were caused by potholes, leading to the deaths of more than 3,400 people. Road accidents caused by other factors kill another 1,43,000 people and seriously injure over 5,00,000 people every year in the country. Sadly, these figures might not even paint the true picture: a team of researchers from the Johns Hopkins Bloomberg School of Public Health suggests that the numbers could be much higher. In their study, the researchers analysed figures from Belgaum, Karnataka, and found that there is considerable underreporting of deaths caused by road accidents in India. That a country which claims to be the fastest growing economy in the world does not even have a scientific method of data collection in this regard is simply appalling. <\/p>\n<p>Who is to blame?<\/p>\n<p>In a majority of road accident cases (more than 75 per cent in 2015), the blame is primarily placed on the driver \u2014 or what is referred to as \u201cdriver\u2019s fault\u201d \u2014 according to government analysis. No wonder the truck driver in Praveen\u2019s case abandoned his vehicle and scampered off, well aware of the fact that the blame would be pinned on him due to the lack of a proper investigation mechanism to ascertain the actual cause of Praveen\u2019s death.<\/p>\n",
+      "excerpt": "<p>Last month, yet another pothole claimed yet another man. Praveen, 45, was crushed to death by a tanker when his motorcycle fell into a rainwater-filled pothole in New Delhi. In more alarming news, official figures show that in 2015 alone, over 10,800 accidents in India were caused by potholes, leading to the deaths of more <\/p>\n",
+      "date": "2016-08-08 12:04:11",
+      "modified": "2016-08-08 12:04:11",
+      "categories": [
+        {
+          "id": 125,
+          "slug": "politics",
+          "title": "Politics",
+          "description": "",
+          "parent": 0,
+          "post_count": 2706
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 11,
+        "slug": "the-hindu",
+        "name": "The Hindu",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "The Hindu",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [],
+      "comment_count": 0,
+      "comment_status": "closed",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-100x100.jpeg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/www.thehindu.com\/opinion\/op-ed\/saji-cherian-on-making-our-roads-safe\/article8955841.ece"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265.jpeg",
+          "width": 635,
+          "height": 556
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-100x100.jpeg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-343x300.jpeg",
+          "width": 343,
+          "height": 300
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265.jpeg",
+          "width": 635,
+          "height": 556
+        },
+        "large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265.jpeg",
+          "width": 635,
+          "height": 556
+        },
+        "td_0x420": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-480x420.jpeg",
+          "width": 480,
+          "height": 420
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-80x60.jpeg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-100x75.jpeg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-180x135.jpeg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-238x178.jpeg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-300x160.jpeg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-300x194.jpeg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-300x350.jpeg",
+          "width": 300,
+          "height": 350
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-341x220.jpeg",
+          "width": 341,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-537x360.jpeg",
+          "width": 537,
+          "height": 360
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265.jpeg",
+          "width": 635,
+          "height": 556
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-635x350.jpeg",
+          "width": 635,
+          "height": 350
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265.jpeg",
+          "width": 635,
+          "height": 556
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265.jpeg",
+          "width": 635,
+          "height": 556
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-511x400.jpeg",
+          "width": 511,
+          "height": 400
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-341x400.jpeg",
+          "width": 341,
+          "height": 400
+        },
+        "td_681x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-265-635x400.jpeg",
+          "width": 635,
+          "height": 400
+        }
+      }
+    },
+    {
+      "id": 25290,
+      "type": "post",
+      "slug": "indias-next-challenge-building-state-capacity",
+      "url": "http:\/\/www.politicl.com\/indias-next-challenge-building-state-capacity\/",
+      "status": "publish",
+      "title": "India\u2019s next challenge: building state capacity",
+      "title_plain": "India\u2019s next challenge: building state capacity",
+      "content": "<p>With the passage of enabling legislation for the goods and services tax (GST) in the Rajya Sabha, the Narendra Modi government\u2019s reforms scorecard looks much better. Since the GST and other reform measures like the insolvency and bankruptcy code will take years of preparatory work, both the centre and the states should set their sights on the next set of challenging reforms.<\/p>\n<p>\t\t\t\tThe discourse on economic reforms, however, operates in a limited bandwidth. The factor market reforms are seen as the appropriate follow-up to the product market reforms. Indeed, the factor market reforms are important. But equally important are the reforms to improve India\u2019s state capacity. Broadly defined as the ability of a government to administer its territory effectively, state capacity determines, in many ways, the success of market reforms. The centre and states can choose to focus on three particular sets of reforms: administrative reforms, police reforms and judicial reforms. While these reforms may seem non-economic in nature, they promise to bring immense economic returns.<\/p>\n",
+      "excerpt": "<p>With the passage of enabling legislation for the goods and services tax (GST) in the Rajya Sabha, the Narendra Modi government\u2019s reforms scorecard looks much better. Since the GST and other reform measures like the insolvency and bankruptcy code will take years of preparatory work, both the centre and the states should set their sights <\/p>\n",
+      "date": "2016-08-08 11:59:55",
+      "modified": "2016-08-08 11:59:55",
+      "categories": [
+        {
+          "id": 126,
+          "slug": "economy",
+          "title": "Economy",
+          "description": "",
+          "parent": 0,
+          "post_count": 1353
+        },
+        {
+          "id": 125,
+          "slug": "politics",
+          "title": "Politics",
+          "description": "",
+          "parent": 0,
+          "post_count": 2706
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 14,
+        "slug": "livemint",
+        "name": "Livemint",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "Livemint",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [],
+      "comment_count": 0,
+      "comment_status": "closed",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-100x100.jpeg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/www.livemint.com\/Opinion\/t7f9sHDkrMy8LvpnPuHOHJ\/Indias-next-challenge-building-state-capacity.html"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258.jpeg",
+          "width": 621,
+          "height": 414
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-100x100.jpeg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-400x267.jpeg",
+          "width": 400,
+          "height": 267
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258.jpeg",
+          "width": 621,
+          "height": 414
+        },
+        "large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258.jpeg",
+          "width": 621,
+          "height": 414
+        },
+        "td_0x420": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258.jpeg",
+          "width": 621,
+          "height": 414
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-80x60.jpeg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-100x75.jpeg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-180x135.jpeg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-238x178.jpeg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-300x160.jpeg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-300x194.jpeg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-300x350.jpeg",
+          "width": 300,
+          "height": 350
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-341x220.jpeg",
+          "width": 341,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-537x360.jpeg",
+          "width": 537,
+          "height": 360
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258.jpeg",
+          "width": 621,
+          "height": 414
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-621x350.jpeg",
+          "width": 621,
+          "height": 350
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258.jpeg",
+          "width": 621,
+          "height": 414
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258.jpeg",
+          "width": 621,
+          "height": 414
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-511x400.jpeg",
+          "width": 511,
+          "height": 400
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-341x400.jpeg",
+          "width": 341,
+          "height": 400
+        },
+        "td_681x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-258-621x400.jpeg",
+          "width": 621,
+          "height": 400
+        }
+      }
+    },
+    {
+      "id": 25275,
+      "type": "post",
+      "slug": "complicity-and-inequality",
+      "url": "http:\/\/www.politicl.com\/complicity-and-inequality\/",
+      "status": "publish",
+      "title": "Complicity and inequality",
+      "title_plain": "Complicity and inequality",
+      "content": "<p>The tragic episode in Una and the Dalit mobilisation that followed last month reflect the condition of this social category in Gujarat, not just in terms of ritual status, but also from a socio-economic point of view. They show Gujarat has not been a model of development for everybody in the state.Ancestral practices of discrimination related to the so-called impurity of Dalits are particularly resilient in Gujarat. In 2013, a report, Understanding Untouchability, based on a survey conducted in 1,589 villages by the Navsarjan Trust \u2014 an organisation that promotes the rights of Dalits \u2014 documented some of these practices. In more than half of the villages surveyed, the Dalits did not have access to wells, temples, tea stalls, panchayat offices, barbers, non-Dalit mid-wives, mid-day meals etc. This state of affairs is partly due to the non-implementation of the Scheduled Castes and Scheduled Tribes (Prevention of Atrocities Act), 1989.<\/p>\n<p>Ancestral practices of discrimination related to the so-called impurity of Dalits are particularly resilient in Gujarat. In 2013, a report, Understanding Untouchability, based on a survey conducted in 1,589 villages by the Navsarjan Trust \u2014 an organisation that promotes the rights of Dalits \u2014 documented some of these practices. In more than half of the villages surveyed, the Dalits did not have access to wells, temples, tea stalls, panchayat offices, barbers, non-Dalit mid-wives, mid-day meals etc. This state of affairs is partly due to the non-implementation of the Scheduled Castes and Scheduled Tribes (Prevention of Atrocities Act), 1989.<\/p>\n",
+      "excerpt": "<p>The tragic episode in Una and the Dalit mobilisation that followed last month reflect the condition of this social category in Gujarat, not just in terms of ritual status, but also from a socio-economic point of view. They show Gujarat has not been a model of development for everybody in the state.Ancestral practices of discrimination <\/p>\n",
+      "date": "2016-08-08 11:56:14",
+      "modified": "2016-08-08 11:56:14",
+      "categories": [
+        {
+          "id": 125,
+          "slug": "politics",
+          "title": "Politics",
+          "description": "",
+          "parent": 0,
+          "post_count": 2706
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 18,
+        "slug": "the-indian-express",
+        "name": "The Indian Express",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "The Indian Express",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [],
+      "comment_count": 0,
+      "comment_status": "closed",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-100x100.jpeg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/indianexpress.com\/article\/opinion\/columns\/dalit-protests-gujarat-una-dalit-flogging-bjp-congress-2960221\/"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253.jpeg",
+          "width": 759,
+          "height": 422
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-100x100.jpeg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-400x222.jpeg",
+          "width": 400,
+          "height": 222
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253.jpeg",
+          "width": 759,
+          "height": 422
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-80x60.jpeg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-100x75.jpeg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-180x135.jpeg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-238x178.jpeg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-300x160.jpeg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-300x194.jpeg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-300x350.jpeg",
+          "width": 300,
+          "height": 350
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-341x220.jpeg",
+          "width": 341,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-537x360.jpeg",
+          "width": 537,
+          "height": 360
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-640x356.jpeg",
+          "width": 640,
+          "height": 356
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-640x350.jpeg",
+          "width": 640,
+          "height": 350
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-681x379.jpeg",
+          "width": 681,
+          "height": 379
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253.jpeg",
+          "width": 759,
+          "height": 422
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-511x400.jpeg",
+          "width": 511,
+          "height": 400
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-253-341x400.jpeg",
+          "width": 341,
+          "height": 400
+        }
+      }
+    },
+    {
+      "id": 25271,
+      "type": "post",
+      "slug": "nitish-kumar-acting-like-man-possessed",
+      "url": "http:\/\/www.politicl.com\/nitish-kumar-acting-like-man-possessed\/",
+      "status": "publish",
+      "title": "Nitish Kumar Acting Like A Man Possessed",
+      "title_plain": "Nitish Kumar Acting Like A Man Possessed",
+      "content": "<p>Is Nitish Kumar, the Chief Minister of Bihar, a man on a mission or a man possessed? His determination to introduce prohibition in Bihar showed that he was a man on a mission. The latest amendments in the Bihar excise law and his reply to the debate on it in the Bihar assembly shows that he is a man possessed.In the run-up to the assembly elections in Bihar, Nitish had made a promise to the electorate that he would introduce prohibition in the state if he formed the government. He got the mandate from the people and nobody can grudge him the right to introduce a ban on alcohol. The argument in Bihar today is not about his right to do so; the argument is about the manner in which he is going about implementing this resolve.He first banned country liquor from April 1, 2016.<\/p>\n",
+      "excerpt": "<p>Is Nitish Kumar, the Chief Minister of Bihar, a man on a mission or a man possessed? His determination to introduce prohibition in Bihar showed that he was a man on a mission. The latest amendments in the Bihar excise law and his reply to the debate on it in the Bihar assembly shows that <\/p>\n",
+      "date": "2016-08-08 11:54:37",
+      "modified": "2016-08-08 11:54:37",
+      "categories": [
+        {
+          "id": 125,
+          "slug": "politics",
+          "title": "Politics",
+          "description": "",
+          "parent": 0,
+          "post_count": 2706
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 7,
+        "slug": "ndtv",
+        "name": "NDTV",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "NDTV",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [],
+      "comment_count": 0,
+      "comment_status": "closed",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-100x100.jpeg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/www.ndtv.com\/opinion\/nitish-kumar-acting-like-a-man-possessed-1441329"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252.jpeg",
+          "width": 650,
+          "height": 400
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-100x100.jpeg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-400x246.jpeg",
+          "width": 400,
+          "height": 246
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252.jpeg",
+          "width": 650,
+          "height": 400
+        },
+        "td_0x420": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252.jpeg",
+          "width": 650,
+          "height": 400
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-80x60.jpeg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-100x75.jpeg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-180x135.jpeg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-238x178.jpeg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-300x160.jpeg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-300x194.jpeg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-300x350.jpeg",
+          "width": 300,
+          "height": 350
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-341x220.jpeg",
+          "width": 341,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-537x360.jpeg",
+          "width": 537,
+          "height": 360
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-640x394.jpeg",
+          "width": 640,
+          "height": 394
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-640x350.jpeg",
+          "width": 640,
+          "height": 350
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252.jpeg",
+          "width": 650,
+          "height": 400
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252.jpeg",
+          "width": 650,
+          "height": 400
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-511x400.jpeg",
+          "width": 511,
+          "height": 400
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-341x400.jpeg",
+          "width": 341,
+          "height": 400
+        },
+        "td_681x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-252-650x400.jpeg",
+          "width": 650,
+          "height": 400
+        }
+      }
+    },
+    {
+      "id": 25256,
+      "type": "post",
+      "slug": "delhi-high-courts-judgement-on-lt-governors-powers-is-worrying",
+      "url": "http:\/\/www.politicl.com\/delhi-high-courts-judgement-on-lt-governors-powers-is-worrying\/",
+      "status": "publish",
+      "title": "Delhi High Court\u2019s Judgement on Lt Governor\u2019s Powers is Worrying",
+      "title_plain": "Delhi High Court\u2019s Judgement on Lt Governor\u2019s Powers is Worrying",
+      "content": "<p>In recent years there has been relatively little in the functioning of their democracy that Indians can be proud of. A shining exception, however, is the higher judiciary whose independence has been zealously guarded by the Supreme Court. But the judgment handed down by the Delhi High Court on Thursday, that the Lieutenant Governor of Delhi is not bound to act upon the \u201caid and advice\u201d of the elected government of the state, because the National Capital Territory is not a state but, \u201ccontinues to be a union territory\u201d is so problematic that it cannot but cast a pall of doubt upon its sagacity and objectivity.<\/p>\n<p>The Court has ruled explicitly that a notification issued by the Union Home ministry on May 21 2015, which over-ruled a 1998 notification that had required the L-G of Delhi to consult the chief minister on matters of public order, police and services, and allowed him to take all such decisions entirely on his own, was valid in law.<\/p>\n",
+      "excerpt": "<p>In recent years there has been relatively little in the functioning of their democracy that Indians can be proud of. A shining exception, however, is the higher judiciary whose independence has been zealously guarded by the Supreme Court. But the judgment handed down by the Delhi High Court on Thursday, that the Lieutenant Governor of <\/p>\n",
+      "date": "2016-08-08 11:51:11",
+      "modified": "2016-08-08 11:51:11",
+      "categories": [
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 26,
+        "slug": "the-wire",
+        "name": "The Wire",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "The Wire",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [],
+      "comment_count": 0,
+      "comment_status": "closed",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-100x100.jpeg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/thewire.in\/57117\/57117\/"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247.jpeg",
+          "width": 640,
+          "height": 360
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-100x100.jpeg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-400x225.jpeg",
+          "width": 400,
+          "height": 225
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247.jpeg",
+          "width": 640,
+          "height": 360
+        },
+        "large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247.jpeg",
+          "width": 640,
+          "height": 360
+        },
+        "td_0x420": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247.jpeg",
+          "width": 640,
+          "height": 360
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-80x60.jpeg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-100x75.jpeg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-180x135.jpeg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-238x178.jpeg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-300x160.jpeg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-300x194.jpeg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-300x350.jpeg",
+          "width": 300,
+          "height": 350
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-341x220.jpeg",
+          "width": 341,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-537x360.jpeg",
+          "width": 537,
+          "height": 360
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-640x360.jpeg",
+          "width": 640,
+          "height": 360
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-640x350.jpeg",
+          "width": 640,
+          "height": 350
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247.jpeg",
+          "width": 640,
+          "height": 360
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247.jpeg",
+          "width": 640,
+          "height": 360
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-511x360.jpeg",
+          "width": 511,
+          "height": 360
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247-341x360.jpeg",
+          "width": 341,
+          "height": 360
+        },
+        "td_681x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-247.jpeg",
+          "width": 640,
+          "height": 360
+        }
+      }
+    },
+    {
+      "id": 25199,
+      "type": "post",
+      "slug": "gsts-great-idea-making-work-not-going-easy",
+      "url": "http:\/\/www.politicl.com\/gsts-great-idea-making-work-not-going-easy\/",
+      "status": "publish",
+      "title": "GST\u2019s a great idea. But making it work is not going to be easy",
+      "title_plain": "GST\u2019s a great idea. But making it work is not going to be easy",
+      "content": "<p>The Constitutional amendment to facilitate a goods and services tax has been called the greatest economic reform since 1991.Political scientists have hailed the new &#8220;co-operative financial federalism, and &#8220;one nation, one tax, one market&#8221;. Trucks in India average just 270km a day against 800km in the US because of checkpost delays at state borders, and GST could slash these. Economic optimists hope GDP will improve by over Rs 100,000 crore. But let&#8217;s not go overboard. Simplicity and uniformity in taxation is indeed an excellent idea.But a long hard road lies ahead. <\/p>\n<p>The government has set an ambitious dead line of April 1, 2017 for GST to be launched. The states will first have to ratify the Constitutional amendment. Then the GST Council (consisting of central and state finance ministers) will have to decide the different GST rates and allied matters. There could be serious discord between states on this, delaying the GST rollout. <\/p>\n",
+      "excerpt": "<p>The Constitutional amendment to facilitate a goods and services tax has been called the greatest economic reform since 1991.Political scientists have hailed the new &#8220;co-operative financial federalism, and &#8220;one nation, one tax, one market&#8221;. Trucks in India average just 270km a day against 800km in the US because of checkpost delays at state borders, and <\/p>\n",
+      "date": "2016-08-07 15:12:49",
+      "modified": "2016-08-07 15:12:49",
+      "categories": [
+        {
+          "id": 126,
+          "slug": "economy",
+          "title": "Economy",
+          "description": "",
+          "parent": 0,
+          "post_count": 1353
+        },
+        {
+          "id": 125,
+          "slug": "politics",
+          "title": "Politics",
+          "description": "",
+          "parent": 0,
+          "post_count": 2706
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 13,
+        "slug": "the-economic-times",
+        "name": "The Economic Times",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "The Economic Times",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [
+        {
+          "id": 25200,
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "slug": "rsz_sa_aiyar_bccl",
+          "title": "rsz_sa_aiyar_bccl",
+          "description": "",
+          "caption": "",
+          "parent": 25199,
+          "mime_type": "image\/jpeg",
+          "images": {
+            "full": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "thumbnail": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-100x100.jpg",
+              "width": 100,
+              "height": 100
+            },
+            "medium": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "medium_large": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "large": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "td_0x420": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "td_80x60": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-80x60.jpg",
+              "width": 80,
+              "height": 60
+            },
+            "td_100x75": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-100x75.jpg",
+              "width": 100,
+              "height": 75
+            },
+            "td_180x135": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-180x135.jpg",
+              "width": 180,
+              "height": 135
+            },
+            "td_238x178": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-238x178.jpg",
+              "width": 238,
+              "height": 178
+            },
+            "td_300x160": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-300x160.jpg",
+              "width": 300,
+              "height": 160
+            },
+            "td_300x194": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-300x194.jpg",
+              "width": 300,
+              "height": 194
+            },
+            "td_300x350": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-300x233.jpg",
+              "width": 300,
+              "height": 233
+            },
+            "td_341x220": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-310x220.jpg",
+              "width": 310,
+              "height": 220
+            },
+            "td_537x360": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "td_640x0": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "td_640x350": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "td_681x0": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "td_1021x580": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "td_511x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "td_341x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            },
+            "td_681x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+              "width": 310,
+              "height": 233
+            }
+          }
+        }
+      ],
+      "comment_count": 0,
+      "comment_status": "open",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-100x100.jpg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/economictimes.indiatimes.com\/news\/politics-and-nation\/gsts-a-great-idea-but-making-it-work-is-not-going-to-be-easy\/articleshow\/53582077.cms"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-100x100.jpg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "td_0x420": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-80x60.jpg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-100x75.jpg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-180x135.jpg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-238x178.jpg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-300x160.jpg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-300x194.jpg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-300x233.jpg",
+          "width": 300,
+          "height": 233
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl-310x220.jpg",
+          "width": 310,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        },
+        "td_681x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/rsz_sa_aiyar_bccl.jpg",
+          "width": 310,
+          "height": 233
+        }
+      }
+    },
+    {
+      "id": 25128,
+      "type": "post",
+      "slug": "the-jung-between-modi-and-kejriwal-and-the-travails-of-a-quasi-state",
+      "url": "http:\/\/www.politicl.com\/the-jung-between-modi-and-kejriwal-and-the-travails-of-a-quasi-state\/",
+      "status": "publish",
+      "title": "The \u2018Jung\u2019 Between Modi and Kejriwal and the Travails of a Quasi State",
+      "title_plain": "The \u2018Jung\u2019 Between Modi and Kejriwal and the Travails of a Quasi State",
+      "content": "<p>It is important to understand the constitutional reasoning behind the Delhi high court\u2019s August 4, 2016 order which states that the National Capital Territory is a union territory (UT) and that the lieutenant governor is its administrative head. It is equally important to understand that the court\u2019s reasoning disregards certain norms and conventions of constitutional morality and that there may be some merit in the Aam Aadmi Party government\u2019s appeal to the Supreme Court.<\/p>\n<p>Delhi has a peculiar federal architecture. It is more than a UT \u2013 unlike what the high court ruled \u2013 but less than a full state. Article 239 of the Indian constitution is the provision that governs UTs: it states, \u201cevery union territory shall be administered by the president acting\u2026 through an administrator to be appointed by him\u2026\u201d Delhi however is not a UT. The 69th amendment (1991) changed the federal status of Delhi from a UT to a National Capital Territory. Article 239AA of the Indian constitution provides for an elected government with legislative and co-extensive executive powers.<\/p>\n",
+      "excerpt": "<p>It is important to understand the constitutional reasoning behind the Delhi high court\u2019s August 4, 2016 order which states that the National Capital Territory is a union territory (UT) and that the lieutenant governor is its administrative head. It is equally important to understand that the court\u2019s reasoning disregards certain norms and conventions of constitutional <\/p>\n",
+      "date": "2016-08-07 11:41:34",
+      "modified": "2016-08-07 11:41:34",
+      "categories": [
+        {
+          "id": 125,
+          "slug": "politics",
+          "title": "Politics",
+          "description": "",
+          "parent": 0,
+          "post_count": 2706
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 26,
+        "slug": "the-wire",
+        "name": "The Wire",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "The Wire",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [],
+      "comment_count": 0,
+      "comment_status": "closed",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-100x100.jpeg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/thewire.in\/56854\/the-jung-between-modi-and-kejriwal-and-the-travails-of-a-quasi-state\/"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209.jpeg",
+          "width": 750,
+          "height": 493
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-100x100.jpeg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-400x263.jpeg",
+          "width": 400,
+          "height": 263
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209.jpeg",
+          "width": 750,
+          "height": 493
+        },
+        "td_0x420": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-639x420.jpeg",
+          "width": 639,
+          "height": 420
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-80x60.jpeg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-100x75.jpeg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-180x135.jpeg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-238x178.jpeg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-300x160.jpeg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-300x194.jpeg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-300x350.jpeg",
+          "width": 300,
+          "height": 350
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-341x220.jpeg",
+          "width": 341,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-537x360.jpeg",
+          "width": 537,
+          "height": 360
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-640x421.jpeg",
+          "width": 640,
+          "height": 421
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-640x350.jpeg",
+          "width": 640,
+          "height": 350
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209.jpeg",
+          "width": 750,
+          "height": 493
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-511x400.jpeg",
+          "width": 511,
+          "height": 400
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-209-341x400.jpeg",
+          "width": 341,
+          "height": 400
+        }
+      }
+    },
+    {
+      "id": 25119,
+      "type": "post",
+      "slug": "fifth-column-wake-up-mr-modi",
+      "url": "http:\/\/www.politicl.com\/fifth-column-wake-up-mr-modi\/",
+      "status": "publish",
+      "title": "Fifth column: Wake up, Mr\u00a0Modi",
+      "title_plain": "Fifth column: Wake up, Mr\u00a0Modi",
+      "content": "<p>Did the Prime Minister\u2019s heart miss a beat when he watched the people of Benares pour into the streets to welcome Sonia Gandhi last week? Mine certainly did because the last thing India needs is another spell of feudalism in socialist guise. Feudalism so debilitating that it reduced India\u2019s oldest political party into being the servitor of a dynasty that has long shown that it is bereft of new ideas, except those that keep it in power.<\/p>\n<p>Your columnist is routinely derided by leftists and secularists for supporting Narendra Modi, and routinely trolled on Twitter for being a \u2018Modi bhakt\u2019. Let me explain the reasons for my continued support. I first saw Modi in a sympathetic light when I realised that he was being unfairly demonised by revered media pundits. These venerable pundits had never demonised other political leaders on whose watch equally horrible communal violence had occurred. Unjust or not? Then they refused to accept that ordinary people across India had forgiven him by 2014 and were ready to make him prime minister. Many remained in denial till the results came out. If I have continued to see Modi as our only hope, it is because the alternatives are terrifying.<\/p>\n",
+      "excerpt": "<p>Did the Prime Minister\u2019s heart miss a beat when he watched the people of Benares pour into the streets to welcome Sonia Gandhi last week? Mine certainly did because the last thing India needs is another spell of feudalism in socialist guise. Feudalism so debilitating that it reduced India\u2019s oldest political party into being the <\/p>\n",
+      "date": "2016-08-07 11:38:19",
+      "modified": "2016-08-07 11:38:19",
+      "categories": [
+        {
+          "id": 125,
+          "slug": "politics",
+          "title": "Politics",
+          "description": "",
+          "parent": 0,
+          "post_count": 2706
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 18,
+        "slug": "the-indian-express",
+        "name": "The Indian Express",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "The Indian Express",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [],
+      "comment_count": 0,
+      "comment_status": "closed",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-100x100.jpeg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/indianexpress.com\/article\/opinion\/columns\/fifth-column-wake-up-narendra-modi-sonia-gandhi-varanasi-rally-pm-gau-rakshaks-tavleen-singh-column-2958519\/"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206.jpeg",
+          "width": 759,
+          "height": 422
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-100x100.jpeg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-400x222.jpeg",
+          "width": 400,
+          "height": 222
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206.jpeg",
+          "width": 759,
+          "height": 422
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-80x60.jpeg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-100x75.jpeg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-180x135.jpeg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-238x178.jpeg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-300x160.jpeg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-300x194.jpeg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-300x350.jpeg",
+          "width": 300,
+          "height": 350
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-341x220.jpeg",
+          "width": 341,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-537x360.jpeg",
+          "width": 537,
+          "height": 360
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-640x356.jpeg",
+          "width": 640,
+          "height": 356
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-640x350.jpeg",
+          "width": 640,
+          "height": 350
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-681x379.jpeg",
+          "width": 681,
+          "height": 379
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206.jpeg",
+          "width": 759,
+          "height": 422
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-511x400.jpeg",
+          "width": 511,
+          "height": 400
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-206-341x400.jpeg",
+          "width": 341,
+          "height": 400
+        }
+      }
+    },
+    {
+      "id": 25095,
+      "type": "post",
+      "slug": "not-full-fledged-state",
+      "url": "http:\/\/www.politicl.com\/not-full-fledged-state\/",
+      "status": "publish",
+      "title": "Not a full-fledged State",
+      "title_plain": "Not a full-fledged State",
+      "content": "<p>In maintaining that Delhi is just a Union Territory, the Delhi High Court has answered some major and unresolved questions about the constitutional status of the National Capital Region. The Court has held that the special provisions incorporated for Delhi, under Article 239AA of the Constitution, do not negate the effect of Article 239, which empowers the Lt Governor to act independently of his Council of Ministers; in other words, the concurrence of the Lt Governor is mandatory for administrative decisions. Unless the Supreme Court adopts a diametrically opposite view, the Aam Aadmi Party, which has engaged in a turf war with the Centre over who rules Delhi, will have to abide by the categorical ruling that the Lt Governor is not bound to act on the aid and advice of the Council of Ministers. Given that the Supreme Court had taken a similar position in the NDMC vs State of Punjab case, the Delhi High Court judgment is no surprise.<\/p>\n",
+      "excerpt": "<p>In maintaining that Delhi is just a Union Territory, the Delhi High Court has answered some major and unresolved questions about the constitutional status of the National Capital Region. The Court has held that the special provisions incorporated for Delhi, under Article 239AA of the Constitution, do not negate the effect of Article 239, which <\/p>\n",
+      "date": "2016-08-06 10:55:19",
+      "modified": "2016-08-06 10:55:19",
+      "categories": [
+        {
+          "id": 125,
+          "slug": "politics",
+          "title": "Politics",
+          "description": "",
+          "parent": 0,
+          "post_count": 2706
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 11,
+        "slug": "the-hindu",
+        "name": "The Hindu",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "The Hindu",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [
+        {
+          "id": 25108,
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/h35y4r0aw5n7tph9xcat.jpeg",
+          "slug": "h35y4r0aw5n7tph9xcat-3",
+          "title": "h35y4r0aw5n7tph9xcat",
+          "description": "",
+          "caption": "",
+          "parent": 25095,
+          "mime_type": "image\/jpeg",
+          "images": []
+        },
+        {
+          "id": 25109,
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+          "slug": "10th_kejriwal_1750918g",
+          "title": "10TH_KEJRIWAL_1750918g",
+          "description": "",
+          "caption": "",
+          "parent": 25095,
+          "mime_type": "image\/jpeg",
+          "images": {
+            "full": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+              "width": 630,
+              "height": 421
+            },
+            "thumbnail": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-100x100.jpg",
+              "width": 100,
+              "height": 100
+            },
+            "medium": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-400x267.jpg",
+              "width": 400,
+              "height": 267
+            },
+            "medium_large": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+              "width": 630,
+              "height": 421
+            },
+            "large": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+              "width": 630,
+              "height": 421
+            },
+            "td_80x60": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-80x60.jpg",
+              "width": 80,
+              "height": 60
+            },
+            "td_100x75": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-100x75.jpg",
+              "width": 100,
+              "height": 75
+            },
+            "td_180x135": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-180x135.jpg",
+              "width": 180,
+              "height": 135
+            },
+            "td_238x178": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-238x178.jpg",
+              "width": 238,
+              "height": 178
+            },
+            "td_300x160": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-300x160.jpg",
+              "width": 300,
+              "height": 160
+            },
+            "td_300x194": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-300x194.jpg",
+              "width": 300,
+              "height": 194
+            },
+            "td_300x350": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-300x350.jpg",
+              "width": 300,
+              "height": 350
+            },
+            "td_341x220": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-341x220.jpg",
+              "width": 341,
+              "height": 220
+            },
+            "td_537x360": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-537x360.jpg",
+              "width": 537,
+              "height": 360
+            },
+            "td_640x0": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+              "width": 630,
+              "height": 421
+            },
+            "td_681x0": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+              "width": 630,
+              "height": 421
+            },
+            "td_1021x580": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+              "width": 630,
+              "height": 421
+            },
+            "td_511x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-511x400.jpg",
+              "width": 511,
+              "height": 400
+            },
+            "td_341x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-341x400.jpg",
+              "width": 341,
+              "height": 400
+            }
+          }
+        }
+      ],
+      "comment_count": 0,
+      "comment_status": "closed",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-100x100.jpg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/www.thehindu.com\/opinion\/editorial\/turf-war-between-aap-government-and-lt-governor-on-constitutional-status-of-new-delhi-not-a-fullfledged-state\/article8949434.ece"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+          "width": 630,
+          "height": 421
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-100x100.jpg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-400x267.jpg",
+          "width": 400,
+          "height": 267
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+          "width": 630,
+          "height": 421
+        },
+        "large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+          "width": 630,
+          "height": 421
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-80x60.jpg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-100x75.jpg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-180x135.jpg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-238x178.jpg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-300x160.jpg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-300x194.jpg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-300x350.jpg",
+          "width": 300,
+          "height": 350
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-341x220.jpg",
+          "width": 341,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-537x360.jpg",
+          "width": 537,
+          "height": 360
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+          "width": 630,
+          "height": 421
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+          "width": 630,
+          "height": 421
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g.jpg",
+          "width": 630,
+          "height": 421
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-511x400.jpg",
+          "width": 511,
+          "height": 400
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/10TH_KEJRIWAL_1750918g-341x400.jpg",
+          "width": 341,
+          "height": 400
+        }
+      }
+    },
+    {
+      "id": 25069,
+      "type": "post",
+      "slug": "startups-must-innovate-india",
+      "url": "http:\/\/www.politicl.com\/startups-must-innovate-india\/",
+      "status": "publish",
+      "title": "Startups Must Innovate For India",
+      "title_plain": "Startups Must Innovate For India",
+      "content": "<p>By Amitabh Kant <\/p>\n<p>India is buzzing with entrepreneurial activity like never before. Entrepreneurship is the next big economic force in India, not only because it helps in the creation of jobs and wealth, but also because it attempts to resolve the real problems of India. What we expect from startups is the mind-set to turn India\u2019s vexing issues into opportunities.<\/p>\n<p>What worked in the US and Europe may not work for the Indian market because competitive conditions, availability of technologies, nature of resource endowments and educational infrastructure are vastly different. Startups need to re-evaluate commercial opportunities in Indian market. Our economy, which generates thousands of local products every year, best demonstrates our local innovation.<\/p>\n",
+      "excerpt": "<p>By Amitabh Kant India is buzzing with entrepreneurial activity like never before. Entrepreneurship is the next big economic force in India, not only because it helps in the creation of jobs and wealth, but also because it attempts to resolve the real problems of India. What we expect from startups is the mind-set to turn <\/p>\n",
+      "date": "2016-08-06 10:44:08",
+      "modified": "2016-08-06 10:44:08",
+      "categories": [
+        {
+          "id": 126,
+          "slug": "economy",
+          "title": "Economy",
+          "description": "",
+          "parent": 0,
+          "post_count": 1353
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 13,
+        "slug": "the-economic-times",
+        "name": "The Economic Times",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "The Economic Times",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [
+        {
+          "id": 25070,
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/IDEA-BCCL.jpg",
+          "slug": "idea-bccl",
+          "title": "IDEA-BCCL",
+          "description": "",
+          "caption": "",
+          "parent": 25069,
+          "mime_type": "image\/jpeg",
+          "images": []
+        },
+        {
+          "id": 25072,
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/IDEA-BCCL-1.jpg",
+          "slug": "idea-bccl-1",
+          "title": "IDEA-BCCL (1)",
+          "description": "",
+          "caption": "",
+          "parent": 25069,
+          "mime_type": "image\/jpeg",
+          "images": []
+        },
+        {
+          "id": 25076,
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "slug": "startup-writing-on-chalk-board",
+          "title": "startup-writing-on-chalk-board",
+          "description": "",
+          "caption": "",
+          "parent": 25069,
+          "mime_type": "image\/jpeg",
+          "images": {
+            "full": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "thumbnail": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-100x100.jpg",
+              "width": 100,
+              "height": 100
+            },
+            "medium": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "medium_large": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "large": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "td_0x420": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "td_80x60": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-80x60.jpg",
+              "width": 80,
+              "height": 60
+            },
+            "td_100x75": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-100x75.jpg",
+              "width": 100,
+              "height": 75
+            },
+            "td_180x135": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-180x135.jpg",
+              "width": 180,
+              "height": 135
+            },
+            "td_238x178": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-238x178.jpg",
+              "width": 238,
+              "height": 178
+            },
+            "td_300x160": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-300x160.jpg",
+              "width": 300,
+              "height": 160
+            },
+            "td_300x194": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-300x194.jpg",
+              "width": 300,
+              "height": 194
+            },
+            "td_300x350": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-300x210.jpg",
+              "width": 300,
+              "height": 210
+            },
+            "td_341x220": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "td_537x360": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "td_640x0": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "td_640x350": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "td_681x0": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "td_1021x580": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "td_511x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "td_341x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            },
+            "td_681x400": {
+              "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+              "width": 340,
+              "height": 210
+            }
+          }
+        }
+      ],
+      "comment_count": 0,
+      "comment_status": "open",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-100x100.jpg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/blogs.economictimes.indiatimes.com\/et-commentary\/startups-must-innovate-for-india\/"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-100x100.jpg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "td_0x420": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-80x60.jpg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-100x75.jpg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-180x135.jpg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-238x178.jpg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-300x160.jpg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-300x194.jpg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board-300x210.jpg",
+          "width": 300,
+          "height": 210
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        },
+        "td_681x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/startup-writing-on-chalk-board.jpg",
+          "width": 340,
+          "height": 210
+        }
+      }
+    },
+    {
+      "id": 25032,
+      "type": "post",
+      "slug": "return-of-the-viceroy",
+      "url": "http:\/\/www.politicl.com\/return-of-the-viceroy\/",
+      "status": "publish",
+      "title": "Return of the\u00a0viceroy",
+      "title_plain": "Return of the\u00a0viceroy",
+      "content": "<p>At some of the most crucial junctures in our democratic history, courts have interpreted our constitution to incarnate our founders\u2019 ideals and aspirations to the present generation. In the Kesavananda Bharati case, the Supreme Court (SC) invented the Doctrine of Basic Structure, preventing the basic features of our Constitution from being mutilated by elected despots. In \u2018Maneka Gandhi vs Union of India\u2019, the SC gave the widest possible interpretation of the right to life and personal liberty and expanded the horizons of free speech. In the P.J. Thomas case, Justice S.H. Kapadia laid out the doctrine of institutional integrity. Most recently, in the NJAC case, the Supreme Court preserved the independence of the judiciary and admitted the need to improve the collegium system.<\/p>\n<p>But there are also judgements where the courts, by resorting to a literal and narrow interpretation, have endangered the spirit of democracy and basic constitutional values. In the infamous Habeas Corpus case, in a 4:1 majority verdict, the SC ruled that even fundamental rights like the right to life and liberty stood abrogated during Emergency. Thursday\u2019s high court verdict declaring the LG as administrative head of the National Territory of Delhi falls in the latter category.<\/p>\n",
+      "excerpt": "<p>At some of the most crucial junctures in our democratic history, courts have interpreted our constitution to incarnate our founders\u2019 ideals and aspirations to the present generation. In the Kesavananda Bharati case, the Supreme Court (SC) invented the Doctrine of Basic Structure, preventing the basic features of our Constitution from being mutilated by elected despots. <\/p>\n",
+      "date": "2016-08-06 10:20:35",
+      "modified": "2016-08-06 10:20:35",
+      "categories": [
+        {
+          "id": 125,
+          "slug": "politics",
+          "title": "Politics",
+          "description": "",
+          "parent": 0,
+          "post_count": 2706
+        },
+        {
+          "id": 1,
+          "slug": "top-stories",
+          "title": "Top Stories",
+          "description": "",
+          "parent": 0,
+          "post_count": 666
+        }
+      ],
+      "tags": [],
+      "author": {
+        "id": 18,
+        "slug": "the-indian-express",
+        "name": "The Indian Express",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "The Indian Express",
+        "url": "",
+        "description": ""
+      },
+      "comments": [],
+      "attachments": [],
+      "comment_count": 0,
+      "comment_status": "closed",
+      "thumbnail": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-100x100.jpeg",
+      "custom_fields": {
+        "custom_source_url": [
+          "http:\/\/indianexpress.com\/article\/opinion\/columns\/delhi-satehood-najeeb-jung-arvind-kejriwal-aap-return-of-the-viceroy-2956355\/"
+        ],
+        "post_views_count": [
+          "0"
+        ]
+      },
+      "thumbnail_size": "thumbnail",
+      "thumbnail_images": {
+        "full": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184.jpeg",
+          "width": 759,
+          "height": 422
+        },
+        "thumbnail": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-100x100.jpeg",
+          "width": 100,
+          "height": 100
+        },
+        "medium": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-400x222.jpeg",
+          "width": 400,
+          "height": 222
+        },
+        "medium_large": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184.jpeg",
+          "width": 759,
+          "height": 422
+        },
+        "td_80x60": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-80x60.jpeg",
+          "width": 80,
+          "height": 60
+        },
+        "td_100x75": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-100x75.jpeg",
+          "width": 100,
+          "height": 75
+        },
+        "td_180x135": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-180x135.jpeg",
+          "width": 180,
+          "height": 135
+        },
+        "td_238x178": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-238x178.jpeg",
+          "width": 238,
+          "height": 178
+        },
+        "td_300x160": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-300x160.jpeg",
+          "width": 300,
+          "height": 160
+        },
+        "td_300x194": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-300x194.jpeg",
+          "width": 300,
+          "height": 194
+        },
+        "td_300x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-300x350.jpeg",
+          "width": 300,
+          "height": 350
+        },
+        "td_341x220": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-341x220.jpeg",
+          "width": 341,
+          "height": 220
+        },
+        "td_537x360": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-537x360.jpeg",
+          "width": 537,
+          "height": 360
+        },
+        "td_640x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-640x356.jpeg",
+          "width": 640,
+          "height": 356
+        },
+        "td_640x350": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-640x350.jpeg",
+          "width": 640,
+          "height": 350
+        },
+        "td_681x0": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-681x379.jpeg",
+          "width": 681,
+          "height": 379
+        },
+        "td_1021x580": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184.jpeg",
+          "width": 759,
+          "height": 422
+        },
+        "td_511x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-511x400.jpeg",
+          "width": 511,
+          "height": 400
+        },
+        "td_341x400": {
+          "url": "http:\/\/www.politicl.com\/wp-content\/uploads\/2016\/08\/picture-184-341x400.jpeg",
+          "width": 341,
+          "height": 400
+        }
+      }
+    }
+  ]
+}
