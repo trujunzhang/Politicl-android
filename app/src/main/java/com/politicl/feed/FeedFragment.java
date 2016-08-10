@@ -62,9 +62,6 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     private RestQueryPara para;
 
     public interface Callback {
-        void onFeedSearchRequested();
-
-        void onFeedVoiceSearchRequested();
         void onFeedSelectPage(HistoryEntry entry);
         void onFeedAddPageToList(HistoryEntry entry);
         void onFeedSharePage(HistoryEntry entry);
@@ -202,6 +199,16 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
         }
 
         @Override
+        public void onSearchRequested() {
+
+        }
+
+        @Override
+        public void onVoiceSearchRequested() {
+
+        }
+
+        @Override
         public void onSelectPage(@NonNull HistoryEntry entry) {
             if (getCallback() != null) {
                 getCallback().onFeedSelectPage(entry);
@@ -219,20 +226,6 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
         public void onSharePage(@NonNull HistoryEntry entry) {
             if (getCallback() != null) {
                 getCallback().onFeedSharePage(entry);
-            }
-        }
-
-        @Override
-        public void onSearchRequested() {
-            if (getCallback() != null) {
-                getCallback().onFeedSearchRequested();
-            }
-        }
-
-        @Override
-        public void onVoiceSearchRequested() {
-            if (getCallback() != null) {
-                getCallback().onFeedVoiceSearchRequested();
             }
         }
 

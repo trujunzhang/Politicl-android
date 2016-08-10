@@ -375,16 +375,6 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 
 
     @Override
-    public void onFeedSearchRequested() {
-
-    }
-
-    @Override
-    public void onFeedVoiceSearchRequested() {
-
-    }
-
-    @Override
     public void onFeedSelectPage(HistoryEntry entry) {
 
     }
