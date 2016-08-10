@@ -1,7 +1,9 @@
 package com.politicl;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -18,6 +20,7 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.politicl.feed.FeedFragment;
 import com.politicl.feed.NavDrawerHelper;
@@ -377,7 +380,14 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 
     @Override
     public void onFeedSelectPage(HistoryEntry entry) {
-
+        try {
+            Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(entry.getTitle().getCustomSourceUrl()));
+            startActivity(myIntent);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(this, "No application can handle this request."
+                    + " Please install a webbrowser", Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
     }
 
     @Override
