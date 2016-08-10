@@ -48,9 +48,12 @@ public abstract class FeedCoordinatorBase {
         updateListener = listener;
     }
 
-    public void reset() {
+    public void reset(RestQueryPara para) {
+        if (para != null) {
+            this.para = para;
+        }
         site = null;
-        para.reset();
+        this.para.reset();
         for (FeedClient client : pendingClients) {
             client.cancel();
         }

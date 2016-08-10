@@ -26,12 +26,12 @@ public class FeedFunnel extends Funnel {
         );
     }
 
-    public void reset(int currentPageNumber, int category_id, String title) {
+    public void reset(RestQueryPara para) {
         log(
                 "action", "reset",
-                "title", title,
-                "currentPageNumber", currentPageNumber,
-                "category_id", category_id
+                "title", para.getTitle(),
+                "currentPageNumber", para.getCurrentPageNumber(),
+                "category_id", para.getCategory_id()
         );
     }
 
