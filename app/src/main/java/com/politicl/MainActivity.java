@@ -232,7 +232,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     /**
      * Add a new fragment to the top of the activity's backstack.
      *
