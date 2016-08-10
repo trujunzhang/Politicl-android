@@ -154,19 +154,28 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            this.finish();
-        }
+        if (closeNavDrawer())
+            return;
+        if (popTopFragement())
+            return;
+
+        this.finish();
+
+//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        if (drawer.isDrawerOpen(GravityCompat.START)) {
+//            drawer.closeDrawer(GravityCompat.START);
+//        } else {
+//
+//        }
     }
 
-    public void closeNavDrawer() {
+    public boolean closeNavDrawer() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
+            return true;
         }
+        return false;
     }
 
     @Override
@@ -211,18 +220,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showFeed(RestQueryPara para) {
-        if (getTopFragment() instanceof FeedFragment) {
-            ((FeedFragment) getTopFragment()).scrollToTop();
-            resetFeedFragment((FeedFragment) getTopFragment(), para);
-        } else {
-            popTopFragmentsExcept(FeedFragment.class);
-            pushFragment(FeedFragment.newInstance(para));
-        }
+//        if (getTopFragment() instanceof FeedFragment) {
+//            ((FeedFragment) getTopFragment()).scrollToTop();
+//            resetFeedFragment((FeedFragment) getTopFragment(), para);
+//        } else {
+//            popTopFragmentsExcept(FeedFragment.class);
+        pushFragment(FeedFragment.newInstance(para));
+//        }
     }
 
     public void resetFeedFragment(FeedFragment f, RestQueryPara para) {
         closeNavDrawer();
         f.resetFeed(para);
+    }
+
+    private boolean popTopFragement() {
+        if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
+            getSupportFragmentManager().popBackStackImmediate();
+            return true;
+        }
+
+        return false;
     }
 
     private void popTopFragmentsExcept(Class<?>... frags) {
@@ -259,22 +277,21 @@ public class MainActivity extends AppCompatActivity {
         // then just keep the previous fragment there.
         // e.g. if the user selected History, and there's already a History fragment on top,
         // then there's no need to load a new History fragment.
-        if (getTopFragment() != null && (getTopFragment().getClass() == f.getClass())) {
-            return;
-        }
+//        if (getTopFragment() != null && (getTopFragment().getClass() == f.getClass())) {
+//            return;
+//        }
 
-//        popTopFragmentsExcept(FeedFragment.class, PageFragment.class);
-        if (getTopFragment() == null || (getTopFragment().getClass() != f.getClass())) {
-            FragmentTransaction trans = getSupportFragmentManager().beginTransaction();
-            trans.setCustomAnimations(R.anim.fade_in, R.anim.fade_out, R.anim.fade_in, R.anim.fade_out);
-            trans.add(R.id.content_fragment_container, f);
-            trans.addToBackStack(null);
-            if (allowStateLoss) {
-                trans.commitAllowingStateLoss();
-            } else {
-                trans.commit();
-            }
+//        if (getTopFragment() == null || (getTopFragment().getClass() != f.getClass())) {
+        FragmentTransaction trans = getSupportFragmentManager().beginTransaction();
+        trans.setCustomAnimations(R.anim.fade_in, R.anim.fade_out, R.anim.fade_in, R.anim.fade_out);
+        trans.add(R.id.content_fragment_container, f);
+        trans.addToBackStack(null);
+        if (allowStateLoss) {
+            trans.commitAllowingStateLoss();
+        } else {
+            trans.commit();
         }
+//        }
         afterFragmentChanged();
     }
 
