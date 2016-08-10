@@ -39,7 +39,7 @@ public class AggregatedCategoryFeedContentClientTest extends ActivityInstrumenta
     public void testFetcher() {
 
         RestQueryPara pagination = new RestQueryPara(1,"");
-        new AggregatedCategoryFeedContentClient().request(mActivity.getApplicationContext(), PoliticlApp.getInstance().getSite(), pagination, new FeedClient.Callback() {
+        new AggregatedFeedContentClient().request(mActivity.getApplicationContext(), PoliticlApp.getInstance().getSite(), pagination, new FeedClient.Callback() {
             @Override
             public void success(@NonNull List<? extends Card> cards) {
                 completionLatch.countDown();
