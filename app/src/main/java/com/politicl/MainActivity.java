@@ -22,6 +22,7 @@ import android.view.View;
 import com.politicl.feed.FeedFragment;
 import com.politicl.feed.NavDrawerHelper;
 import com.politicl.feed.aggregated.RestQueryPara;
+import com.politicl.history.HistoryEntry;
 import com.politicl.tooltip.ToolTipUtil;
 
 import org.apache.commons.lang3.ArrayUtils;
@@ -29,7 +30,7 @@ import org.apache.commons.lang3.ArrayUtils;
 import static com.politicl.util.DeviceUtil.hideSoftKeyboard;
 import static com.politicl.util.DeviceUtil.isBackKeyUp;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements FeedFragment.Callback {
 
     public static final String ALL_STORIES_TITLE = "Politicl";
 
@@ -302,6 +303,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     private class MainDrawerToggle extends ActionBarDrawerToggle {
         private boolean oncePerSlideLock = false;
 
@@ -369,6 +371,32 @@ public class MainActivity extends AppCompatActivity {
 
     public void updateNavDrawerSelection(Fragment fragment) {
         navDrawerHelper.updateItemSelection(fragment);
+    }
+
+
+    @Override
+    public void onFeedSearchRequested() {
+
+    }
+
+    @Override
+    public void onFeedVoiceSearchRequested() {
+
+    }
+
+    @Override
+    public void onFeedSelectPage(HistoryEntry entry) {
+
+    }
+
+    @Override
+    public void onFeedAddPageToList(HistoryEntry entry) {
+
+    }
+
+    @Override
+    public void onFeedSharePage(HistoryEntry entry) {
+
     }
 
 }

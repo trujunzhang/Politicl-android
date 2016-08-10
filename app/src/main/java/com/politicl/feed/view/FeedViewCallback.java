@@ -2,11 +2,13 @@ package com.politicl.feed.view;
 
 import android.support.annotation.NonNull;
 
+import com.politicl.PageTitleListCardItemCallback;
 import com.politicl.feed.model.Card;
 import com.politicl.widgets.ItemTouchHelperSwipeAdapter;
 
 
-public interface FeedViewCallback extends ItemTouchHelperSwipeAdapter.Callback{
+public interface FeedViewCallback extends ItemTouchHelperSwipeAdapter.Callback,
+        PageTitleListCardItemCallback {
     void onRequestMore();
     void onSearchRequested();
     void onVoiceSearchRequested();

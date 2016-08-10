@@ -9,6 +9,8 @@ import com.politicl.feed.model.Card;
 import com.politicl.feed.model.CardPageItem;
 import com.politicl.feed.model.PostCard;
 import com.politicl.feed.model.UtcDate;
+import com.politicl.history.HistoryEntry;
+import com.politicl.history.PageTitle;
 import com.politicl.util.DateUtil;
 import com.politicl.util.StringUtil;
 
@@ -52,7 +54,7 @@ public class FeaturedArticleCard extends Card {
 
     @Nullable
     public String articleSubtitle() {
-       return null;
+        return null;
     }
 
 
@@ -71,13 +73,13 @@ public class FeaturedArticleCard extends Card {
         return page.extract();
     }
 
-//    @NonNull
-//    public HistoryEntry historyEntry(int source) {
-//        PageTitle title = new PageTitle(articleTitle(), site());
-//        if (image() != null) {
-//            title.setThumbUrl(image().toString());
-//        }
-//        title.setDescription(articleSubtitle());
-//        return new HistoryEntry(title, source);
-//    }
+    @NonNull
+    public HistoryEntry historyEntry(int source) {
+        PageTitle title = new PageTitle(articleTitle());
+        if (image() != null) {
+            title.setThumbUrl(image().toString());
+        }
+        title.setDescription(articleSubtitle());
+        return new HistoryEntry(title, source);
+    }
 }

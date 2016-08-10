@@ -27,6 +27,7 @@ import com.politicl.feed.model.Card;
 import com.politicl.feed.view.FeedRecyclerAdapter;
 import com.politicl.feed.view.FeedView;
 import com.politicl.feed.view.FeedViewCallback;
+import com.politicl.history.HistoryEntry;
 import com.politicl.settings.Prefs;
 import com.politicl.util.DimenUtil;
 
@@ -64,9 +65,9 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
         void onFeedSearchRequested();
 
         void onFeedVoiceSearchRequested();
-//        void onFeedSelectPage(HistoryEntry entry);
-//        void onFeedAddPageToList(HistoryEntry entry);
-//        void onFeedSharePage(HistoryEntry entry);
+        void onFeedSelectPage(HistoryEntry entry);
+        void onFeedAddPageToList(HistoryEntry entry);
+        void onFeedSharePage(HistoryEntry entry);
 //        void onFeedNewsItemSelected(NewsItemCard card);
 //        void onFeedShareImage(FeaturedImageCard card);
 //        void onFeedDownloadImage(FeaturedImage image);
@@ -200,26 +201,26 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
             coordinator.more(app.getSite());
         }
 
-//        @Override
-//        public void onSelectPage(@NonNull HistoryEntry entry) {
-//            if (getCallback() != null) {
-//                getCallback().onFeedSelectPage(entry);
-//            }
-//        }
-//
-//        @Override
-//        public void onAddPageToList(@NonNull HistoryEntry entry) {
-//            if (getCallback() != null) {
-//                getCallback().onFeedAddPageToList(entry);
-//            }
-//        }
-//
-//        @Override
-//        public void onSharePage(@NonNull HistoryEntry entry) {
-//            if (getCallback() != null) {
-//                getCallback().onFeedSharePage(entry);
-//            }
-//        }
+        @Override
+        public void onSelectPage(@NonNull HistoryEntry entry) {
+            if (getCallback() != null) {
+                getCallback().onFeedSelectPage(entry);
+            }
+        }
+
+        @Override
+        public void onAddPageToList(@NonNull HistoryEntry entry) {
+            if (getCallback() != null) {
+                getCallback().onFeedAddPageToList(entry);
+            }
+        }
+
+        @Override
+        public void onSharePage(@NonNull HistoryEntry entry) {
+            if (getCallback() != null) {
+                getCallback().onFeedSharePage(entry);
+            }
+        }
 
         @Override
         public void onSearchRequested() {

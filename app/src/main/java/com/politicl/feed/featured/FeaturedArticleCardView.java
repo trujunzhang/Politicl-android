@@ -13,6 +13,7 @@ import com.politicl.R;
 import com.politicl.feed.view.ActionFooterView;
 import com.politicl.feed.view.CardHeaderView;
 import com.politicl.feed.view.FeedCardView;
+import com.politicl.history.HistoryEntry;
 import com.politicl.widgets.FaceAndColorDetectImageView;
 import com.politicl.widgets.GoneIfEmptyTextView;
 import com.politicl.widgets.ItemTouchHelperSwipeAdapter;
@@ -115,7 +116,7 @@ public class FeaturedArticleCardView extends FeedCardView
         @Override
         public void onClick(View v) {
             if (getCallback() != null) {
-//                getCallback().onSelectPage(card.historyEntry(HistoryEntry.SOURCE_FEED_FEATURED));
+                getCallback().onSelectPage(card.historyEntry(HistoryEntry.SOURCE_FEED_FEATURED));
             }
         }
     }
@@ -124,7 +125,7 @@ public class FeaturedArticleCardView extends FeedCardView
         @Override
         public void onClick(View v) {
             if (getCallback() != null) {
-//                getCallback().onAddPageToList(card.historyEntry(HistoryEntry.SOURCE_FEED_FEATURED));
+                getCallback().onAddPageToList(card.historyEntry(HistoryEntry.SOURCE_FEED_FEATURED));
             }
         }
     }
@@ -133,7 +134,7 @@ public class FeaturedArticleCardView extends FeedCardView
         @Override
         public void onClick(View v) {
             if (getCallback() != null) {
-//                getCallback().onSharePage(card.historyEntry(HistoryEntry.SOURCE_FEED_FEATURED));
+                getCallback().onSharePage(card.historyEntry(HistoryEntry.SOURCE_FEED_FEATURED));
             }
         }
     }
