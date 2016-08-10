@@ -91,7 +91,7 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
         coordinator = new FeedCoordinator(getContext(), para);
         coordinator.more(app.getSite());
         funnel = new FeedFunnel(app);
-        Prefs.pageLastShown(0);
+        Prefs.pageLastShown(1);
     }
 
     @Nullable
