@@ -221,8 +221,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetFeedFragment(FeedFragment f, RestQueryPara para) {
-        f.resetFeed(para);
         closeNavDrawer();
+        f.resetFeed(para);
     }
 
     private void popTopFragmentsExcept(Class<?>... frags) {
