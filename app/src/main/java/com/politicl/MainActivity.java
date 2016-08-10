@@ -384,9 +384,7 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
             Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(entry.getTitle().getCustomSourceUrl()));
             startActivity(myIntent);
         } catch (ActivityNotFoundException e) {
-            Toast.makeText(this, "No application can handle this request."
-                    + " Please install a webbrowser", Toast.LENGTH_LONG).show();
-            e.printStackTrace();
+            Toast.makeText(this, "No application can handle this request.Please install a webbrowser", Toast.LENGTH_LONG).show();
         }
     }
 
