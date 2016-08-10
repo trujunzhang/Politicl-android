@@ -306,6 +306,7 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
         funnel.reset(para);
         toolbar.setTitle(para.getTitle());
         swipeRefreshLayout.setRefreshing(false);
+        scrollToTop();
         coordinator.reset(para);
         feedView.update();
         coordinator.more(app.getSite());
