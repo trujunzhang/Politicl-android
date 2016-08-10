@@ -213,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
     public void showFeed(RestQueryPara para) {
         if (getTopFragment() instanceof FeedFragment) {
             ((FeedFragment) getTopFragment()).scrollToTop();
-            resetFeedFragment((FeedFragment) getTopFragment(),para);
+            resetFeedFragment((FeedFragment) getTopFragment(), para);
         } else {
             popTopFragmentsExcept(FeedFragment.class);
             pushFragment(FeedFragment.newInstance(para));
@@ -222,8 +222,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void resetFeedFragment(FeedFragment f, RestQueryPara para) {
         f.resetFeed(para);
+        closeNavDrawer();
     }
-
 
     private void popTopFragmentsExcept(Class<?>... frags) {
         while (getSupportFragmentManager().getBackStackEntryCount() > 0
