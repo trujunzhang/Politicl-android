@@ -79,7 +79,7 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
         Bundle args = new Bundle();
         args.putParcelable(ARG_REST_PARA, para);
         fragment.setArguments(args);
-        fragment.setRetainInstance(false);
+        fragment.setRetainInstance(true);
         return fragment;
     }
 
