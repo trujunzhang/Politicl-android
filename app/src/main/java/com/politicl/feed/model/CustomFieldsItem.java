@@ -12,8 +12,8 @@ import java.util.List;
 
 public class CustomFieldsItem {
 
-    @SuppressWarnings("unused,NullableProblems") @NonNull private ZeroItem  custom_source_url;
+    @SuppressWarnings("unused,NullableProblems") @NonNull private List<String>  custom_source_url;
 
-    @SuppressWarnings("unused,NullableProblems") @NonNull private ZeroItem post_views_count;
+    @SuppressWarnings("unused,NullableProblems") @NonNull private List<Integer> post_views_count;
 
 }
