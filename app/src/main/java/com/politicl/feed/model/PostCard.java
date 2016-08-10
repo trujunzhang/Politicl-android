@@ -35,6 +35,8 @@ public class PostCard{
     @SuppressWarnings("unused,NullableProblems") @NonNull private List<TagItem> tags;
     @SuppressWarnings("unused,NullableProblems") @NonNull private List<PostCategoryItem> categories;
 
+    @SuppressWarnings("unused,NullableProblems") @NonNull private CustomFieldsItem custom_fields;
+
     @NonNull
     public String title() {
         return title;
