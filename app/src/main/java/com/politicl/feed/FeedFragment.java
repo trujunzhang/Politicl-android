@@ -60,7 +60,6 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     @Nullable
     private RestQueryPara para;
 
-
     public interface Callback {
         void onFeedSearchRequested();
 
@@ -304,8 +303,9 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     }
 
     public void resetFeed(RestQueryPara para) {
-        swipeRefreshLayout.setRefreshing(false);
         funnel.reset(para);
+        toolbar.setTitle(para.getTitle());
+        swipeRefreshLayout.setRefreshing(false);
         coordinator.reset(para);
         feedView.update();
         coordinator.more(app.getSite());
