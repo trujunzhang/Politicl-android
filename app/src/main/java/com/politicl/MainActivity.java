@@ -235,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean popTopFragement() {
-        if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
+        if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
             getSupportFragmentManager().popBackStackImmediate();
             return true;
         }
