@@ -26,6 +26,15 @@ public class FeedFunnel extends Funnel {
         );
     }
 
+    public void reset(int currentPageNumber, int category_id, String title) {
+        log(
+                "action", "reset",
+                "title", title,
+                "currentPageNumber", currentPageNumber,
+                "category_id", category_id
+        );
+    }
+
     public void dismissCard(int cardType, int position) {
         log(
                 "action", "dismiss",

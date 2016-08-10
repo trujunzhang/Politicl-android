@@ -60,6 +60,7 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     @Nullable
     private RestQueryPara para;
 
+
     public interface Callback {
         void onFeedSearchRequested();
 
@@ -301,4 +302,13 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
 //        });
 //        snackbar.show();
     }
+
+    public void resetFeed(RestQueryPara para) {
+        swipeRefreshLayout.setRefreshing(false);
+        funnel.refresh(coordinator.getCurrentPageNumber());
+        coordinator.reset();
+        feedView.update();
+        coordinator.more(app.getSite());
+    }
+
 }

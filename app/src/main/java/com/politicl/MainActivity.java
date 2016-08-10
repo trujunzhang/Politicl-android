@@ -213,10 +213,15 @@ public class MainActivity extends AppCompatActivity {
     public void showFeed(RestQueryPara para) {
         if (getTopFragment() instanceof FeedFragment) {
             ((FeedFragment) getTopFragment()).scrollToTop();
+            resetFeedFragment((FeedFragment) getTopFragment(),para);
         } else {
             popTopFragmentsExcept(FeedFragment.class);
             pushFragment(FeedFragment.newInstance(para));
         }
+    }
+
+    public void resetFeedFragment(FeedFragment f, RestQueryPara para) {
+        f.resetFeed(para);
     }
 
 
@@ -323,6 +328,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void toggleFragment(int category_id, String title) {
         showFeed(new RestQueryPara(category_id, title));
+
     }
 
     private class MainDrawerToggle extends ActionBarDrawerToggle {
