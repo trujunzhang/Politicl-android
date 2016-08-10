@@ -62,6 +62,10 @@ public class PostCard{
     public String author() {
         return author.author();
     }
+    @NonNull
+    public String customSourceUrl() {
+        return custom_fields.customSourceUrl();
+    }
 
     @Nullable
     public LocalSocketAddress.Namespace namespace() {

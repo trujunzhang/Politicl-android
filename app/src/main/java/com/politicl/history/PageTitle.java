@@ -27,7 +27,6 @@ import java.util.Arrays;
  * of a PageTitle to remain constant for the lifetime of the object.
  */
 public class PageTitle implements Parcelable {
-    private static final String LANGUAGE_CODE_KEY = "languageCode";
 
     /**
      * The localised namespace of the page as a string, or null if the page is in mainspace.
@@ -53,6 +52,8 @@ public class PageTitle implements Parcelable {
     private String thumbUrl;
     @Nullable
     private String description;
+    @Nullable
+    private String customSourceUrl;
 
     public PageTitle(@Nullable String text) {
         this(text, null, null);
@@ -126,5 +127,16 @@ public class PageTitle implements Parcelable {
 //        parcel.writeString(description);
     }
 
+    public String getDisplayText() {
+        return getText();
+    }
+
+    public String getCustomSourceUrl() {
+        return customSourceUrl;
+    }
+
+    public void setCustomSourceUrl(String url) {
+        customSourceUrl = url;
+    }
 
 }

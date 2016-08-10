@@ -57,6 +57,10 @@ public class FeaturedArticleCard extends Card {
         return null;
     }
 
+    @NonNull
+    public String customSourceUrl() {
+        return page.customSourceUrl();
+    }
 
     @Override
     @Nullable
@@ -80,6 +84,7 @@ public class FeaturedArticleCard extends Card {
             title.setThumbUrl(image().toString());
         }
         title.setDescription(articleSubtitle());
+        title.setCustomSourceUrl(customSourceUrl());
         return new HistoryEntry(title, source);
     }
 }

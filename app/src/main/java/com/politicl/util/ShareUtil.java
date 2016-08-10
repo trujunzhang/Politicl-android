@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.politicl.BuildConfig;
 import com.politicl.R;
 import com.politicl.concurrency.SaneAsyncTask;
+import com.politicl.history.PageTitle;
 import com.politicl.util.log.L;
 
 import java.io.ByteArrayOutputStream;
@@ -48,9 +49,9 @@ public final class ShareUtil {
         }
     }
 
-//    public static void shareText(final Context context, final PageTitle title) {
-//        shareText(context, title.getDisplayText(), UriUtil.getUrlWithProvenance(context, title, R.string.prov_share_link));
-//    }
+    public static void shareText(final Context context, final PageTitle title) {
+        shareText(context, title.getDisplayText(), title.getCustomSourceUrl());
+    }
 
     /**
      * Share a bitmap image using an activity chooser, so that the user can choose the
@@ -240,5 +241,6 @@ public final class ShareUtil {
         return intentActivity.activityInfo.packageName;
     }
 
-    private ShareUtil() { }
+    private ShareUtil() {
+    }
 }

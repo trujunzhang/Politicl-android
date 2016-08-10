@@ -24,6 +24,7 @@ import com.politicl.feed.NavDrawerHelper;
 import com.politicl.feed.aggregated.RestQueryPara;
 import com.politicl.history.HistoryEntry;
 import com.politicl.tooltip.ToolTipUtil;
+import com.politicl.util.ShareUtil;
 
 import org.apache.commons.lang3.ArrayUtils;
 
@@ -386,7 +387,7 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 
     @Override
     public void onFeedSharePage(HistoryEntry entry) {
-
+        ShareUtil.shareText(this, entry.getTitle());
     }
 
 }

@@ -21,4 +21,27 @@
     <string name="format_error_server_code">Code: \"%s\"</string>
 
     <string name="error_network_error">Cannot connect to the Internet.</string>
+
+    <!-- Crash reporter -->
+    <string name="crash_report_dialog_title">Sorry, app crashed last time</string>
+    <string name="crash_report_dialog_text">Would you like to send a crash report to HockeyApp / a third-party service provider so that Politicl can review your crash and fix the bug that caused it?</string>
+    <string name="crash_report_dialog_dont_send_button">Skip</string>
+    <string name="crash_report_dialog_always_send_button">Always send</string>
+    <string name="crash_report_dialog_send_button">Send</string>
+    <string name="crash_report_activity_title">Application error</string>
+    <string name="crash_report_relaunch_or_quit">We\'re sorry, the Politicl app has experienced an error and was terminated.\n\nWould you like to start over or quit?</string>
+    <string name="crash_report_relaunch">Start over</string>
+    <string name="crash_report_quit">Quit</string>
+    <!-- /Crash reporter -->
+
+    <!-- Page toolbar menu -->
+    <string name="menu_page_show_tabs">Show tabs</string>
+    <string name="menu_page_other_languages">Change language</string>
+    <string name="menu_page_find_in_page">Find in page</string>
+    <string name="menu_page_content_issues">Content issues</string>
+    <string name="menu_page_similar_titles">Similar titles</string>
+    <string name="menu_page_font_and_theme">Font and theme</string>
+    <string name="menu_page_add_to_list">Add to reading list</string>
+    <string name="menu_page_share">Share link</string>
+
 </resources>
