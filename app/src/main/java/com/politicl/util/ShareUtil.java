@@ -26,6 +26,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.politicl.util.StringUtil.emptyIfNull;
+
 public final class ShareUtil {
     public static final String APP_PACKAGE_REGEX = "org\\.wikipedia.*";
     private static final String FILE_PROVIDER_AUTHORITY = BuildConfig.APPLICATION_ID + ".fileprovider";
@@ -198,11 +200,11 @@ public final class ShareUtil {
         if (targetIntent.getAction().equals(Intent.ACTION_VIEW)) {
             queryIntent.setData(Uri.parse("http://example.com"));
         }
-//        for (ResolveInfo intentActivity : queryIntentActivities(queryIntent, context)) {
-//            if (!isIntentActivityBlacklisted(intentActivity, packageNameBlacklistRegex)) {
-//                intents.add(buildLabeledIntent(targetIntent, intentActivity));
-//            }
-//        }
+        for (ResolveInfo intentActivity : queryIntentActivities(queryIntent, context)) {
+            if (!isIntentActivityBlacklisted(intentActivity, packageNameBlacklistRegex)) {
+                intents.add(buildLabeledIntent(targetIntent, intentActivity));
+            }
+        }
         return intents;
     }
 
@@ -222,11 +224,11 @@ public final class ShareUtil {
         return canOpen;
     }
 
-//    private static boolean isIntentActivityBlacklisted(@Nullable ResolveInfo intentActivity,
-//                                                       @Nullable String packageNameBlacklistRegex) {
-//        return intentActivity != null
-//                && getPackageName(intentActivity).matches(emptyIfNull(packageNameBlacklistRegex));
-//    }
+    private static boolean isIntentActivityBlacklisted(@Nullable ResolveInfo intentActivity,
+                                                       @Nullable String packageNameBlacklistRegex) {
+        return intentActivity != null
+                && getPackageName(intentActivity).matches(emptyIfNull(packageNameBlacklistRegex));
+    }
 
     private static LabeledIntent buildLabeledIntent(Intent intent, ResolveInfo intentActivity) {
 
