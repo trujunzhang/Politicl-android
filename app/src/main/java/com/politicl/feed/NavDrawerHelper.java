@@ -95,6 +95,9 @@ public class NavDrawerHelper {
         return new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
+                if (lastSelectedMenuItem != null) {
+                    lastSelectedMenuItem.setChecked(false);
+                }
                 lastSelectedMenuItem = menuItem;
                 activity.toggleFragment(menuItem.getItemId(), (String) menuItem.getTitle());
                 clearItemHighlighting();
