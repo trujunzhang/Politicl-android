@@ -88,6 +88,10 @@ public class RestQueryPara implements Parcelable {
         currentPageNumber += 1;
     }
 
+    public boolean shouldShowDialog() {
+        return shouldShowDialog;
+    }
+
     public boolean isAllArticles() {
         return allArticles;
     }

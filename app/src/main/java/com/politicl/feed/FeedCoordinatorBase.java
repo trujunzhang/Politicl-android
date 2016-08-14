@@ -34,7 +34,10 @@ public abstract class FeedCoordinatorBase {
     }
 
     public void dismissDialog() {
-        this.dialog.dismiss();
+        if (this.dialog != null) {
+            this.dialog.dismiss();
+            this.dialog = null;
+        }
     }
 
     @NonNull
@@ -83,6 +86,10 @@ public abstract class FeedCoordinatorBase {
             para.nextPagination();
         }
 
+        if (para.shouldShowDialog()) {
+            this.showLoadingDialog();
+        }
+
         buildScript(para.getCurrentPageNumber());
         requestNextCard(site);
     }
@@ -119,6 +126,7 @@ public abstract class FeedCoordinatorBase {
 
     private void requestNextCard(@NonNull Site site) {
         if (pendingClients.isEmpty()) {
+            this.dismissDialog();
             return;
         }
         pendingClients.remove(0).request(context, site, this.para, exhaustionClientCallback);
