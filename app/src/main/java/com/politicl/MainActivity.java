@@ -1,5 +1,6 @@
 package com.politicl;
 
+import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
@@ -391,5 +392,7 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
     public void onPause() {
         super.onPause();
     }
+
+
 
 }

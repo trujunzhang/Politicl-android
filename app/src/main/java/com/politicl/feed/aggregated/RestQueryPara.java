@@ -10,7 +10,7 @@ public class RestQueryPara implements Parcelable {
     private int totalPages;
     private int category_id;
     private String title;
-
+    private boolean shouldShowDialog;
 
     public RestQueryPara(String title) {
         currentPageNumber = 1;
@@ -54,16 +54,22 @@ public class RestQueryPara implements Parcelable {
     }
 
     private RestQueryPara(Parcel in) {
+        allArticles = in.readInt() == 1;
         currentPageNumber = in.readInt();
         totalPages = in.readInt();
         category_id = in.readInt();
+        title = in.readString();
+        shouldShowDialog = in.readInt() == 1;
     }
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(allArticles ? 1 : 0);
         parcel.writeInt(currentPageNumber);
         parcel.writeInt(totalPages);
         parcel.writeInt(category_id);
+        parcel.writeString(title);
+        parcel.writeInt(shouldShowDialog ? 1 : 0);
     }
 
     @Override
@@ -83,7 +89,7 @@ public class RestQueryPara implements Parcelable {
         return allArticles;
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title;
     }
 }

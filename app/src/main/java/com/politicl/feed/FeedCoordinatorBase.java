@@ -1,5 +1,6 @@
 package com.politicl.feed;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -17,9 +18,22 @@ import java.util.List;
 public abstract class FeedCoordinatorBase {
 
     private RestQueryPara para;
+    private ProgressDialog dialog;
 
     public interface FeedUpdateListener {
         void update(List<Card> cards);
+    }
+
+    public void showLoadingDialog() {
+        this.dialog = new ProgressDialog(this.context); // this = YourActivity
+        dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        dialog.setMessage("Loading. Please wait...");
+        dialog.setIndeterminate(true);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.show();
+    }
+    public void dismissDialog(){
+        this.dialog.dismiss();
     }
 
     @NonNull

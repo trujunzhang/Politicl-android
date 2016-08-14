@@ -55,8 +55,6 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     private FeedFunnel funnel;
     private FeedViewCallback feedCallback = new FeedCallback();
     private FeedHeaderOffsetChangedListener headerOffsetChangedListener = new FeedHeaderOffsetChangedListener();
-    private int searchIconShowThresholdPx;
-    private boolean searchIconVisible;
 
     @Nullable
     private RestQueryPara para;
@@ -103,7 +101,6 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
         unbinder = ButterKnife.bind(this, view);
         feedView.set(coordinator, feedCallback);
         appBarLayout.addOnOffsetChangedListener(headerOffsetChangedListener);
-        searchIconShowThresholdPx = (int) getResources().getDimension(R.dimen.view_feed_header_height) - DimenUtil.getContentTopOffsetPx(getContext());
 
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
             // TODO: remove when handled correctly by appcompat.
@@ -154,9 +151,6 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.clear();
-        if (searchIconVisible) {
-//            inflater.inflate(R.menu.menu_feed, menu);
-        }
     }
 
     @Override
@@ -274,11 +268,6 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     private class FeedHeaderOffsetChangedListener implements AppBarLayout.OnOffsetChangedListener {
         @Override
         public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-            boolean shouldShowSearchIcon = !((searchIconShowThresholdPx + verticalOffset) > 0);
-            if (shouldShowSearchIcon != searchIconVisible) {
-                searchIconVisible = shouldShowSearchIcon;
-                getActivity().supportInvalidateOptionsMenu();
-            }
             swipeRefreshLayout.setEnabled(verticalOffset == 0);
         }
     }
