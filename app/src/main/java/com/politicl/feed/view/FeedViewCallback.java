@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 
 import com.politicl.PageTitleListCardItemCallback;
 import com.politicl.feed.model.Card;
+import com.politicl.history.HistoryEntry;
 import com.politicl.widgets.ItemTouchHelperSwipeAdapter;
 
 
@@ -13,6 +14,7 @@ public interface FeedViewCallback extends ItemTouchHelperSwipeAdapter.Callback,
     void onSearchRequested();
     void onVoiceSearchRequested();
     boolean onRequestDismissCard(@NonNull Card card);
+    void onSharePage(@NonNull HistoryEntry entry);
 //    void onNewsItemSelected(@NonNull NewsItemCard card);
 //    void onShareImage(@NonNull FeaturedImageCard card);
 //    void onDownloadImage(@NonNull FeaturedImage image);

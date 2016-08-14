@@ -16,7 +16,9 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.politicl.R;
+import com.politicl.feed.featured.FeaturedArticleCard;
 import com.politicl.feed.model.Card;
+import com.politicl.history.HistoryEntry;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,10 +27,14 @@ import butterknife.OnClick;
 public class CardHeaderView extends FrameLayout {
     @BindView(R.id.view_card_header_image)
     AppCompatImageView imageView;
-    @BindView(R.id.view_card_header_title) TextView titleView;
-    @BindView(R.id.view_card_header_subtitle) TextView subtitleView;
-    @Nullable private Card card;
-    @Nullable private FeedViewCallback callback;
+    @BindView(R.id.view_card_header_title)
+    TextView titleView;
+    @BindView(R.id.view_card_header_subtitle)
+    TextView subtitleView;
+    @Nullable
+    private Card card;
+    @Nullable
+    private FeedViewCallback callback;
 
     public CardHeaderView(Context context) {
         super(context);
@@ -36,22 +42,26 @@ public class CardHeaderView extends FrameLayout {
         ButterKnife.bind(this);
     }
 
-    @NonNull public CardHeaderView setCard(@NonNull Card card) {
+    @NonNull
+    public CardHeaderView setCard(@NonNull Card card) {
         this.card = card;
         return this;
     }
 
-    @NonNull public CardHeaderView setCallback(@Nullable FeedViewCallback callback) {
+    @NonNull
+    public CardHeaderView setCallback(@Nullable FeedViewCallback callback) {
         this.callback = callback;
         return this;
     }
 
-    @NonNull public CardHeaderView setImage(@DrawableRes int resId) {
+    @NonNull
+    public CardHeaderView setImage(@DrawableRes int resId) {
         imageView.setImageResource(resId);
         return this;
     }
 
-    @NonNull public CardHeaderView setImageCircleColor(@ColorRes int color) {
+    @NonNull
+    public CardHeaderView setImageCircleColor(@ColorRes int color) {
         ColorStateList colorStateList = new ColorStateList(
                 new int[][]{new int[]{}},
                 new int[]{ContextCompat.getColor(getContext(), color)}
@@ -60,22 +70,26 @@ public class CardHeaderView extends FrameLayout {
         return this;
     }
 
-    @NonNull public CardHeaderView setTitle(@Nullable CharSequence title) {
+    @NonNull
+    public CardHeaderView setTitle(@Nullable CharSequence title) {
         titleView.setText(title);
         return this;
     }
 
-    @NonNull public CardHeaderView setTitle(@StringRes int id) {
+    @NonNull
+    public CardHeaderView setTitle(@StringRes int id) {
         titleView.setText(id);
         return this;
     }
 
-    @NonNull public CardHeaderView setSubtitle(@Nullable CharSequence subtitle) {
+    @NonNull
+    public CardHeaderView setSubtitle(@Nullable CharSequence subtitle) {
         subtitleView.setText(subtitle);
         return this;
     }
 
-    @OnClick(R.id.view_list_card_header_menu) protected void onMenuClick(View v) {
+    @OnClick(R.id.view_list_card_header_menu)
+    protected void onMenuClick(View v) {
         showOverflowMenu(v);
     }
 
@@ -92,7 +106,8 @@ public class CardHeaderView extends FrameLayout {
             switch (item.getItemId()) {
                 case R.id.menu_feed_card_dismiss:
                     if (callback != null & card != null) {
-                        return callback.onRequestDismissCard(card);
+                        HistoryEntry historyEntry = ((FeaturedArticleCard) card).historyEntry(HistoryEntry.SOURCE_FEED_FEATURED);
+                        callback.onSharePage(historyEntry);
                     }
                     return false;
                 default:
