@@ -150,9 +150,9 @@ public class NavDrawerHelper {
      * Un-highlight all nav menu entries.
      */
     private void clearItemHighlighting() {
-        for (int i = 0; i < activity.getNavMenu().size(); i++) {
-            activity.getNavMenu().getItem(i).setChecked(false);
-        }
+//        for (int i = 0; i < activity.getNavMenu().size(); i++) {
+//            activity.getNavMenu().getItem(i).setChecked(false);
+//        }
     }
 
     private void startActivity(@NonNull Intent intent) {
