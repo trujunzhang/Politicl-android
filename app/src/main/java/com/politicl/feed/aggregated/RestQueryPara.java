@@ -17,6 +17,7 @@ public class RestQueryPara implements Parcelable {
         totalPages = 1;
         allArticles = true;
         this.title = title;
+        shouldShowDialog = true;
     }
 
     public RestQueryPara(int category_id, String title) {
@@ -78,10 +79,12 @@ public class RestQueryPara implements Parcelable {
     }
 
     public void reset() {
+        shouldShowDialog = true;
         currentPageNumber = 1;
     }
 
     public void nextPagination() {
+        shouldShowDialog = false;
         currentPageNumber += 1;
     }
 

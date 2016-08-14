@@ -32,7 +32,8 @@ public abstract class FeedCoordinatorBase {
         dialog.setCanceledOnTouchOutside(false);
         dialog.show();
     }
-    public void dismissDialog(){
+
+    public void dismissDialog() {
         this.dialog.dismiss();
     }
 
