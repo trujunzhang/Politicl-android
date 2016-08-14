@@ -40,6 +40,7 @@ public class NavDrawerHelper {
     private ImageView accountNameArrow;
     private boolean accountToggle;
     private boolean isTempExplicitHighlight;
+    private MenuItem lastSelectedMenuItem;
 
     public NavDrawerHelper(@NonNull MainActivity activity, View navDrawerHeader) {
         this.funnel = new NavMenuFunnel();
@@ -94,6 +95,7 @@ public class NavDrawerHelper {
         return new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
+                lastSelectedMenuItem = menuItem;
                 activity.toggleFragment(menuItem.getItemId(), (String) menuItem.getTitle());
                 clearItemHighlighting();
                 menuItem.setChecked(true);
