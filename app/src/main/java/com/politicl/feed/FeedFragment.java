@@ -225,15 +225,15 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
 
         @Override
         public boolean onRequestDismissCard(@NonNull Card card) {
-            int position = coordinator.dismissCard(card);
-            funnel.dismissCard(FeedRecyclerAdapter.getCardType(card), position);
-            showDismissCardUndoSnackbar(card, position);
+//            int position = coordinator.dismissCard(card);
+//            funnel.dismissCard(FeedRecyclerAdapter.getCardType(card), position);
+//            showDismissCardUndoSnackbar(card, position);
             return true;
         }
 
         @Override
         public void onSwiped(@IntRange(from = 0) int itemPos) {
-            onRequestDismissCard(coordinator.getCards().get(itemPos));
+//            onRequestDismissCard(coordinator.getCards().get(itemPos));
         }
 
 //        @Override

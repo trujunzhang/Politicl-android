@@ -81,7 +81,7 @@ public class CardHeaderView extends FrameLayout {
 
     private void showOverflowMenu(View anchorView) {
         PopupMenu menu = new PopupMenu(anchorView.getContext(), anchorView);
-//        menu.getMenuInflater().inflate(R.menu.menu_feed_card_header, menu.getMenu());
+        menu.getMenuInflater().inflate(R.menu.menu_feed_card_header, menu.getMenu());
         menu.setOnMenuItemClickListener(new CardHeaderMenuClickListener());
         menu.show();
     }
@@ -90,11 +90,11 @@ public class CardHeaderView extends FrameLayout {
         @Override
         public boolean onMenuItemClick(MenuItem item) {
             switch (item.getItemId()) {
-//                case R.id.menu_feed_card_dismiss:
-//                    if (callback != null & card != null) {
-//                        return callback.onRequestDismissCard(card);
-//                    }
-//                    return false;
+                case R.id.menu_feed_card_dismiss:
+                    if (callback != null & card != null) {
+                        return callback.onRequestDismissCard(card);
+                    }
+                    return false;
                 default:
                     return false;
             }
