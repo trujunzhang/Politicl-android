@@ -79,8 +79,8 @@ public class PostCard{
 
 
     public Card getFeaturedArticleCard(Site site) {
-        CardPageItem page = new CardPageItem();
-        UtcDate date = new UtcDate(10);
+//        CardPageItem page = new CardPageItem();
+//        UtcDate date = new UtcDate(10);
         return new FeaturedArticleCard(this,date,site);
     }
 }

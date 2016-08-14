@@ -18,13 +18,13 @@ import java.net.URI;
 
 public class FeaturedArticleCard extends Card {
     @NonNull
-    private UtcDate date;
+    private String date;
     @NonNull
     private Site site;
     @NonNull
     private PostCard page;
 
-    public FeaturedArticleCard(@NonNull PostCard page, @NonNull UtcDate date, @NonNull Site site) {
+    public FeaturedArticleCard(@NonNull PostCard page, @NonNull String date, @NonNull Site site) {
         this.page = page;
         this.site = site;
         this.date = date;
@@ -39,7 +39,8 @@ public class FeaturedArticleCard extends Card {
     @Override
     @NonNull
     public String subtitle() {
-        return DateUtil.getFeedCardDateString(date.baseCalendar());
+        return date.split(" ")[0];
+//        return DateUtil.getFeedCardDateString(date.baseCalendar());
     }
 
     @NonNull
