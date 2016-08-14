@@ -1,6 +1,7 @@
 package com.politicl;
 
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
@@ -396,6 +397,17 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
     @Override
     public void onFeedSharePage(HistoryEntry entry) {
         ShareUtil.shareText(this, entry.getTitle());
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+//        navDrawerHelper.setupDynamicNavDrawerItems();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
     }
 
 }
