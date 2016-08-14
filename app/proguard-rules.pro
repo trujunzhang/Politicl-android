@@ -1,17 +1,80 @@
-# Add project specific ProGuard rules here.
-# By default, the flags in this file are appended to flags specified
-# in /Users/djzhang/Library/Android/sdk/tools/proguard/proguard-android.txt
-# You can edit the include path and order by changing the proguardFiles
-# directive in build.gradle.
+-dontobfuscate
+
+# --- Fresco ---
+# Keep our interfaces so they can be used by other ProGuard rules.
+# See http://sourceforge.net/p/proguard/bugs/466/
+-keep,allowobfuscation @interface com.facebook.common.internal.DoNotStrip
+
+# Do not strip any method/class that is annotated with @DoNotStrip
+-keep @com.facebook.common.internal.DoNotStrip class *
+-keepclassmembers class * {
+    @com.facebook.common.internal.DoNotStrip *;
+}
+
+# Keep native methods
+-keepclassmembers class * {
+    native <methods>;
+}
+
+#-dontwarn okio.**
+-dontwarn javax.annotation.**
+-dontwarn com.android.volley.toolbox.**
+# --- /Fresco ---
+
+# --- Butter Knife ---
+# Finder.castParam() is stripped when not needed and ProGuard notes it
+# unnecessarily. When castParam() is needed, it's not stripped. e.g.:
 #
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+#  @OnItemSelected(value = R.id.history_entry_list)
+#  void foo(ListView bar) {
+#      L.d("baz");
+#  }
 
-# Add any project specific keep options here:
+-dontnote butterknife.internal.**
+# --- /Butter Knife ---
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+-keep class com.mobsandgeeks.saripaar.** {*;}
+
+-keep class uk.co.senab.photoview.** {*;}
+
+-keep class com.github.kevinsawicki.http.** {*;}
+
+# --- Retrofit2 ---
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature
+-keepattributes Exceptions
+# --- /Retrofit ---
+
+# --- OkHttp + Okio ---
+-dontwarn okhttp3.**
+-keep class okhttp3.** { *; }
+-dontwarn okio.*
+# --- /OkHttp + Okio ---
+
+# --- Gson ---
+# https://github.com/google/gson/blob/master/examples/android-proguard-example/proguard.cfg
+
+# Gson uses generic type information stored in a class file when working with fields. Proguard
+# removes such information by default, so configure it to keep all of it.
+#-keepattributes Signature (already specified)
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+# --- /Gson ---
+
+# --- Politicl ---
+-keep class org.politicl.** { <init>(...); *; }
+-keep enum org.politicl.** { <init>(...); *; }
+-keep class org.mediawiki.api.json.** {*;}
+-keep enum org.politicl.api.json.** { <init>(...); *; }
+# --- /politicl ---
+
+
+-keep public class android.support.v7.widget.** { *; }
+-keep public class android.support.v7.internal.widget.** { *; }
+-keep public class android.support.v7.internal.view.menu.** { *; }
+
+-keep public class * extends android.support.v4.view.ActionProvider {
+    public <init>(android.content.Context);
+}

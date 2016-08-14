@@ -43,6 +43,7 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             testProguardFile 'test-proguard-rules.pro'
+            signingConfig signingConfigs.debug
         }
     }
 
@@ -114,6 +115,7 @@ dependencies {
     androidTestCompile "com.android.support.test.espresso:espresso-core:$espressoVersion"
     androidTestCompile 'com.squareup.spoon:spoon-client:1.5.3'
 }
+
 
 private setSigningConfigKey(config, Properties props) {
     if (props) {
