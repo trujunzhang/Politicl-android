@@ -121,13 +121,6 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
             return;
 
         this.finish();
-
-//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        if (drawer.isDrawerOpen(GravityCompat.START)) {
-//            drawer.closeDrawer(GravityCompat.START);
-//        } else {
-//
-//        }
     }
 
     public boolean closeNavDrawer() {
@@ -258,17 +251,6 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 
     private void afterFragmentChanged() {
     }
-
-
-//    @NonNull
-//    public static Intent newIntent(@NonNull Context context,
-//                                   @NonNull HistoryEntry entry,
-//                                   @NonNull PageTitle title) {
-//        return new Intent(MainActivity.ACTION_PAGE_FOR_TITLE)
-//                .setClass(context, MainActivity.class)
-//                .putExtra(MainActivity.EXTRA_HISTORYENTRY, entry)
-//                .putExtra(MainActivity.EXTRA_PAGETITLE, title);
-//    }
 
     @Override
     protected void onNewIntent(Intent intent) {
