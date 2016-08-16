@@ -38,6 +38,7 @@ public class NavDrawerHelper {
     private NavMenuFunnel funnel;
     private TextView accountNameView;
     private ImageView accountNameArrow;
+    private boolean accountToggle;
     private boolean isTempExplicitHighlight;
     private MenuItem lastSelectedMenuItem;
 
@@ -51,6 +52,10 @@ public class NavDrawerHelper {
                         updateItemSelection(NavDrawerHelper.this.activity.getTopFragment());
                     }
                 });
+//        accountNameView = (TextView) navDrawerHeader.findViewById(R.id.nav_account_text);
+//        accountNameArrow = (ImageView) navDrawerHeader.findViewById(R.id.nav_account_arrow);
+//        updateMenuGroupToggle();
+
         new CategoryClient().request(activity.getApplicationContext(), PoliticlApp.getInstance().getSite(), null, new FeedClient.Callback() {
             @Override
             public void success(@NonNull List<? extends Card> cards) {
@@ -59,7 +64,7 @@ public class NavDrawerHelper {
 
             @Override
             public void successForMenu(@NonNull List<MenuCategoryItem> cards) {
-                setupDynamicNavDrawerItems(cards);
+                NavDrawerHelper.this.setupDynamicNavDrawerItems(cards);
             }
 
             @Override
@@ -75,15 +80,15 @@ public class NavDrawerHelper {
     }
 
     public void setupDynamicNavDrawerItems(List<MenuCategoryItem> cards) {
-        int[] menuItemIds = {R.id.nav_item1, R.id.nav_item2, R.id.nav_item3, R.id.nav_item4, R.id.nav_item5, R.id.nav_item6, R.id.nav_item7, R.id.nav_item8, R.id.nav_item9, R.id.nav_item10};
-        activity.getNavMenu().setGroupVisible(R.id.category_feed, true);
-        int step = 0;
+        accountToggle = false;
+        updateMenuGroupToggle();
+
+        MenuBuilder _NavMenu = (MenuBuilder) activity.getNavMenu();
+        SubMenu _submenu = _NavMenu.addSubMenu("Categories");
         for (MenuCategoryItem item : cards) {
-            int menuItemId = menuItemIds[step++];
-            MenuItem menuItem = activity.getNavMenu().findItem(menuItemId);
-            menuItem.setVisible(true);
-            menuItem.setTitle(item.title());
+            MenuItem menuItem = _submenu.add(GROUP_MENU_CATEGORIES, item.id(), 0, item.title());
             menuItem.setIcon(R.drawable.ic_restore_black_24dp);
+            menuItem.setCheckable(true);
         }
     }
 
@@ -96,7 +101,8 @@ public class NavDrawerHelper {
                 }
                 lastSelectedMenuItem = menuItem;
                 activity.toggleFragment(menuItem.getItemId(), (String) menuItem.getTitle());
-                menuItem.setChecked(true);
+//                clearItemHighlighting();
+//                menuItem.setChecked(true);
                 activity.setNavItemSelected(true);
                 return true;
             }
@@ -123,8 +129,31 @@ public class NavDrawerHelper {
     }
 
     private void setMenuItemSelection(@IdRes int id) {
-//        clearItemHighlighting();
+        clearItemHighlighting();
         activity.getNavMenu().findItem(id).setChecked(true);
+    }
+
+    private void toggleAccountMenu() {
+        accountToggle = !accountToggle;
+        updateMenuGroupToggle();
+    }
+
+    private void updateMenuGroupToggle() {
+//        activity.getNavMenu().setGroupVisible(R.id.group_main, !accountToggle);
+//        activity.getNavMenu().setGroupVisible(R.id.group_user, accountToggle);
+//        accountNameArrow.setVisibility(app.getUserInfoStorage().isLoggedIn() ? View.VISIBLE : View.INVISIBLE);
+//        accountNameArrow.setImageResource(accountToggle ? R.drawable.ic_arrow_drop_up_white_24dp
+//                : R.drawable.ic_arrow_drop_down_white_24dp);
+    }
+
+
+    /**
+     * Un-highlight all nav menu entries.
+     */
+    private void clearItemHighlighting() {
+//        for (int i = 0; i < activity.getNavMenu().size(); i++) {
+//            activity.getNavMenu().getItem(i).setChecked(false);
+//        }
     }
 
     private void startActivity(@NonNull Intent intent) {
