@@ -12,8 +12,8 @@ public class ThumbnailItem {
 
     @Nullable
     public String thumbnail() {
-        if(medium!= null)
-            return medium.source();
+        if(full!= null)
+            return full.source();
         return null;
     }
 }

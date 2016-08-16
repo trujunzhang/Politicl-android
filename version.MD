@@ -5,3 +5,6 @@
 1.0.2:
    1. fixed throw NullPointException when no thumbnail.
 
+1.0.3:
+   1. Using MainActivity's toolbar replaced with FeedFragment's toolbar.
+   2. Using menuItem.setCheckable(true) to show selected menu item's background.
