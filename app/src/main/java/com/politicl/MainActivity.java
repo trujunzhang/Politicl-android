@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
     private Menu navMenu;
     private NavDrawerHelper navDrawerHelper;
     private ActionBarDrawerToggle mDrawerToggle;
-//    private View toolbarContainer;
+    //    private View toolbarContainer;
     private MainActivityToolbarCoordinator toolbarCoordinator;
     private Toolbar toolbar;
 
@@ -120,8 +120,8 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
     public void onBackPressed() {
         if (closeNavDrawer())
             return;
-        if (popTopFragement())
-            return;
+//        if (popTopFragement())
+//            return;
 
         this.finish();
     }
@@ -181,8 +181,9 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 //            ((FeedFragment) getTopFragment()).scrollToTop();
 //            resetFeedFragment((FeedFragment) getTopFragment(), para);
 //        } else {
-//            popTopFragmentsExcept(FeedFragment.class);
+
         getSupportActionBar().setTitle(para.getTitle());
+        popTopFragmentsExcept(FeedFragment.class);
         pushFragment(FeedFragment.newInstance(para));
 //        }
     }
@@ -242,7 +243,7 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 //        if (getTopFragment() == null || (getTopFragment().getClass() != f.getClass())) {
         FragmentTransaction trans = getSupportFragmentManager().beginTransaction();
         trans.setCustomAnimations(R.anim.fade_in, R.anim.fade_out, R.anim.fade_in, R.anim.fade_out);
-        trans.add(R.id.content_fragment_container, f);
+        trans.replace(R.id.content_fragment_container, f);
         trans.addToBackStack(null);
         if (allowStateLoss) {
             trans.commitAllowingStateLoss();
