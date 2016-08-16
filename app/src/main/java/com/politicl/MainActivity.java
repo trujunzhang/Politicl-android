@@ -182,6 +182,7 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 //            resetFeedFragment((FeedFragment) getTopFragment(), para);
 //        } else {
 //            popTopFragmentsExcept(FeedFragment.class);
+        getSupportActionBar().setTitle(para.getTitle());
         pushFragment(FeedFragment.newInstance(para));
 //        }
     }
@@ -253,6 +254,7 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
     }
 
     private void afterFragmentChanged() {
+
     }
 
     @Override
