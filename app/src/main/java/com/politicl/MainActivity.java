@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
     private Menu navMenu;
     private NavDrawerHelper navDrawerHelper;
     private ActionBarDrawerToggle mDrawerToggle;
-    private View toolbarContainer;
+//    private View toolbarContainer;
     private MainActivityToolbarCoordinator toolbarCoordinator;
     private Toolbar toolbar;
 
@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
         drawer.setDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
 
-        toolbarContainer = findViewById(R.id.main_toolbar_container);
-        toolbarCoordinator = new MainActivityToolbarCoordinator(this, toolbarContainer, (Toolbar) findViewById(R.id.toolbar));
+//        toolbarContainer = findViewById(R.id.main_toolbar_container);
+        toolbarCoordinator = new MainActivityToolbarCoordinator(this, null, (Toolbar) findViewById(R.id.toolbar));
 
         getSupportFragmentManager()
                 .addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {

@@ -8,7 +8,7 @@ import android.view.View;
 
 public class MainActivityToolbarCoordinator {
     @NonNull private AppCompatActivity activity;
-    @NonNull private View toolbarContainerView;
+//    @NonNull private View toolbarContainerView;
     @NonNull private Toolbar defaultToolbar;
     @Nullable private Toolbar overrideToolbar;
 
@@ -16,7 +16,7 @@ public class MainActivityToolbarCoordinator {
                                           @NonNull View toolbarContainerView,
                                           @NonNull Toolbar defaultToolbar) {
         this.activity = activity;
-        this.toolbarContainerView = toolbarContainerView;
+//        this.toolbarContainerView = toolbarContainerView;
         this.defaultToolbar = defaultToolbar;
         setActivityToolbar(defaultToolbar);
     }
@@ -24,19 +24,19 @@ public class MainActivityToolbarCoordinator {
     public void setOverrideToolbar(@NonNull Toolbar toolbar) {
         overrideToolbar = toolbar;
         defaultToolbar.getMenu().clear();
-        toolbarContainerView.setVisibility(View.GONE);
+//        toolbarContainerView.setVisibility(View.GONE);
         setActivityToolbar(overrideToolbar);
     }
 
     public void removeOverrideToolbar() {
         overrideToolbar = null;
-        toolbarContainerView.setVisibility(View.VISIBLE);
+//        toolbarContainerView.setVisibility(View.VISIBLE);
         setActivityToolbar(defaultToolbar);
     }
 
     public void setSearchMode(boolean enabled) {
         if (overrideToolbar != null) {
-            toolbarContainerView.setVisibility(enabled ? View.VISIBLE : View.GONE);
+//            toolbarContainerView.setVisibility(enabled ? View.VISIBLE : View.GONE);
         }
     }
 
