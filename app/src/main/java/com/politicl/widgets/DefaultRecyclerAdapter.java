@@ -25,4 +25,4 @@ public abstract class DefaultRecyclerAdapter<T, V extends View>
     @NonNull protected List<T> items() {
         return items;
     }
-}
+    }

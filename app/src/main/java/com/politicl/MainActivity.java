@@ -47,12 +47,13 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
     private ActionBarDrawerToggle mDrawerToggle;
     private View toolbarContainer;
     private MainActivityToolbarCoordinator toolbarCoordinator;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        this.toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -108,7 +109,8 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 
     private void updateToolbarForFragment() {
         if (getTopFragment() instanceof MainActivityToolbarProvider) {
-            toolbarCoordinator.setOverrideToolbar(((MainActivityToolbarProvider) getTopFragment()).getToolbar());
+//            toolbarCoordinator.setOverrideToolbar(((MainActivityToolbarProvider) getTopFragment()).getToolbar());
+//            toolbarCoordinator.setOverrideToolbar(this.toolbar);
         } else {
             toolbarCoordinator.removeOverrideToolbar();
         }
@@ -184,10 +186,10 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 //        }
     }
 
-    public void resetFeedFragment(FeedFragment f, RestQueryPara para) {
-        closeNavDrawer();
-        f.resetFeed(para);
-    }
+//    public void resetFeedFragment(FeedFragment f, RestQueryPara para) {
+//        closeNavDrawer();
+//        f.resetFeed(para);
+//    }
 
     private boolean popTopFragement() {
         if (getSupportFragmentManager().getBackStackEntryCount() > 1) { // more than 1.
@@ -374,7 +376,7 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 
     @Override
     public void onFeedAddPageToList(HistoryEntry entry) {
-
+        this.onFeedSelectPage(entry);
     }
 
     @Override
@@ -392,7 +394,6 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
     public void onPause() {
         super.onPause();
     }
-
 
 
 }

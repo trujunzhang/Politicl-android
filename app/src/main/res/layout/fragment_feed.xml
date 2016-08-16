@@ -40,14 +40,6 @@
                     app:srcCompat="@drawable/feed_header_logo"
                     android:paddingBottom="30dp" />
 
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/feed_toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    app:background="@color/main_toolbar_background"
-                    app:layout_collapseMode="pin"
-                    app:title="@string/fragment_feed_title" />
-
             </android.support.design.widget.CollapsingToolbarLayout>
 
         </android.support.design.widget.AppBarLayout>

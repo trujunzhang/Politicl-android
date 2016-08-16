@@ -47,8 +47,8 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
     SwipeRefreshLayout swipeRefreshLayout;
     @BindView(R.id.fragment_feed_feed)
     FeedView feedView;
-    @BindView(R.id.feed_toolbar)
-    Toolbar toolbar;
+//    @BindView(R.id.feed_toolbar)
+//    Toolbar toolbar;
     private Unbinder unbinder;
     private PoliticlApp app;
     private FeedCoordinator coordinator;
@@ -127,7 +127,7 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
             }
         });
 
-        toolbar.setTitle(para.getTitle());
+//        toolbar.setTitle(para.getTitle());
 
         return view;
     }
@@ -171,10 +171,10 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
         return false;
     }
 
-    @Override
-    public Toolbar getToolbar() {
-        return toolbar;
-    }
+//    @Override
+//    public Toolbar getToolbar() {
+//        return toolbar;
+//    }
 
     public void scrollToTop() {
         feedView.smoothScrollToPosition(0);
@@ -287,7 +287,7 @@ public class FeedFragment extends Fragment implements BackPressedHandler,
 
     public void resetFeed(RestQueryPara para) {
         funnel.reset(para);
-        toolbar.setTitle(para.getTitle());
+//        toolbar.setTitle(para.getTitle());
         swipeRefreshLayout.setRefreshing(false);
 //        this.scrollToTop();
         coordinator.reset(para);
