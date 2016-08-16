@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
     private Menu navMenu;
     private NavDrawerHelper navDrawerHelper;
     private ActionBarDrawerToggle mDrawerToggle;
-    //    private View toolbarContainer;
     private MainActivityToolbarCoordinator toolbarCoordinator;
     private Toolbar toolbar;
+    private RestQueryPara currentPara;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
 //            ((FeedFragment) getTopFragment()).scrollToTop();
 //            resetFeedFragment((FeedFragment) getTopFragment(), para);
 //        } else {
-
+        this.currentPara = para;
         getSupportActionBar().setTitle(para.getTitle());
         popTopFragmentsExcept(FeedFragment.class);
         pushFragment(FeedFragment.newInstance(para));
@@ -390,7 +390,8 @@ public class MainActivity extends AppCompatActivity implements FeedFragment.Call
     @Override
     protected void onResume() {
         super.onResume();
-//        navDrawerHelper.setupDynamicNavDrawerItems();
+        if (this.currentPara != null)
+            getSupportActionBar().setTitle(this.currentPara.getTitle());
     }
 
     @Override
