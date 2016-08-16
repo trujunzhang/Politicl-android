@@ -24,13 +24,20 @@ import butterknife.ButterKnife;
 
 public class FeaturedArticleCardView extends FeedCardView
         implements ItemTouchHelperSwipeAdapter.SwipeableView {
-    @BindView(R.id.view_featured_article_card_header) View headerView;
-    @BindView(R.id.view_featured_article_card_footer) View footerView;
-    @BindView(R.id.view_featured_article_card_image) FaceAndColorDetectImageView imageView;
-    @BindView(R.id.view_featured_article_card_article_title) TextView articleTitleView;
-    @BindView(R.id.view_featured_article_card_article_subtitle) GoneIfEmptyTextView articleSubtitleView;
-    @BindView(R.id.view_featured_article_card_extract) TextView extractView;
-    @BindView(R.id.view_featured_article_card_text_container) View textContainerView;
+    @BindView(R.id.view_featured_article_card_header)
+    View headerView;
+    @BindView(R.id.view_featured_article_card_footer)
+    View footerView;
+    @BindView(R.id.view_featured_article_card_image)
+    FaceAndColorDetectImageView imageView;
+    @BindView(R.id.view_featured_article_card_article_title)
+    TextView articleTitleView;
+    @BindView(R.id.view_featured_article_card_article_subtitle)
+    GoneIfEmptyTextView articleSubtitleView;
+    @BindView(R.id.view_featured_article_card_extract)
+    TextView extractView;
+    @BindView(R.id.view_featured_article_card_text_container)
+    View textContainerView;
 
     private FeaturedArticleCard card;
 
@@ -59,7 +66,7 @@ public class FeaturedArticleCardView extends FeedCardView
     }
 
     private void articleTitle(@NonNull String articleTitle) {
-        articleTitleView.setText(articleTitle);
+        articleTitleView.setText(Html.fromHtml(articleTitle));
     }
 
     private void articleSubtitle(@Nullable String articleSubtitle) {
