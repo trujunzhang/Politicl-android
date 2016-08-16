@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <group
+        android:id="@+id/category_feed"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_item1"
+            android:title=""
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_item2"
+            android:title=""
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_item3"
+            android:title=""
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_item4"
+            android:title=""
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_item5"
+            android:title=""
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_item6"
+            android:title=""
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_item7"
+            android:title=""
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_item8"
+            android:title=""
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_item9"
+            android:title=""
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_item10"
+            android:title=""
+            android:visible="false" />
+    </group>
+
+    <group android:id="@+id/group_more">
+        <item
+            android:id="@+id/nav_item_more"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="xx" />
+    </group>
 
 </menu>
