@@ -94,7 +94,7 @@ public class FeaturedArticleCardView extends FeedCardView
 
     private void footer() {
         footer(new ActionFooterView(getContext())
-                .actionIcon(R.drawable.ic_bookmark_border_black_24dp)
+                .actionIcon(R.drawable.read_more)
                 .actionText(R.string.view_featured_article_footer_save_button_label)
                 .onActionListener(new CardSaveListener())
                 .onShareListener(new CardShareListener()));
