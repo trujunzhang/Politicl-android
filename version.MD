@@ -11,3 +11,6 @@
 
 1.0.4:
    1. Only one feedfragment instance.
+
+1.0.5:
+   1. Fixed no tabbar's title when resuming on the mainactivity.
