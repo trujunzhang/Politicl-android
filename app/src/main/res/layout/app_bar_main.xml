@@ -29,7 +29,7 @@
             android:layout_height="?attr/actionBarSize"
             app:background="@android:color/holo_red_dark"
             app:layout_collapseMode="pin"
-            app:title="wanghao" />
+            app:title="" />
 
     </android.support.design.widget.CollapsingToolbarLayout>
 
